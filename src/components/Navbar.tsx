@@ -6,7 +6,7 @@ export default function Navbar() {
       <nav className="w-[80%] bg-white backdrop-blur-md rounded-xl shadow-md px-6 py-4 flex items-center justify-between">
         {/* Left: Logo */}
         <div className="flex-1 text-left">
-          <h1 className="text-6xl font-bold text-primary">PavéPRO</h1>
+          <h1 className="text-5xl font-bold text-primary">PavéPRO</h1>
         </div>
 
         {/* Center: Navigation links */}
@@ -18,7 +18,7 @@ export default function Navbar() {
 
         {/* Right: CTA button */}
         <div className="flex-1 flex justify-end">
-          <Button className="text-base px-4 py-2">Get Estimate</Button>
+          <Button variant={"important"} className="text-base px-10 py-5">GET AN ESTIMATE</Button>
         </div>
       </nav>
     </div>
