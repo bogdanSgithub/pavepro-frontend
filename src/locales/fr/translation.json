@@ -1,7 +1,7 @@
 { 
   "home": "Accueil",
   "contact": "Contact",
-  "estimate": "Obtenir une estimation",
+  "estimate": "Obtenir une soumission",
   "call": "Appelez-nous",
   "quote": "Professionnel,<br />Protégé,<br />Propre",
   "promotional": "Garantie gratuite de 30 jours",
@@ -21,5 +21,10 @@
       "title": "Traitement de Taches",
       "description": "Nettoyage de grandes surfaces en béton et toutes autres surfaces extérieures qui requièrent une attention particulière."
     }
+  },
+  "portfolio": {
+    "title": "Notre Portfolio",
+    "videoTitle": "Voulez en Voir Plus ?",
+    "cta": "Voir la Galerie"
   }
 }

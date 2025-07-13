@@ -21,5 +21,10 @@
       "title": "Stain Treatment",
       "description": "Cleaning of large concrete surfaces and other exterior areas requiring special attention."
     }
+  },
+  "portfolio": {
+    "title": "Our Portfolio",
+    "videoTitle": "Want To See More?",
+    "cta": "View Gallery"
   }
 }
