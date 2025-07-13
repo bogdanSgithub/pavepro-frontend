@@ -10,7 +10,7 @@ export default function Navbar() {
   }
 
   return (
-      <nav className="px-14 py-3 flex items-center justify-between">
+      <nav className="sticky top-0 z-100 bg-white px-14 py-3 flex items-center justify-between">
         {/* Left: Logo */}
         <div className="flex-1 text-left">
           <h1 className="text-5xl font-bold text-primary font-serif font-bold">PavéPRO</h1>

@@ -14,7 +14,7 @@ export default function Hero() {
       <div className="relative z-10 h-full flex items-center justify-center">
 
         <div className="flex flex-col items-center justify-center text-center px-4">
-          <h2 className="text-4xl md:text-6xl font-bold text-white mb-12">
+          <h2 className="text-left text-4xl md:text-5xl font-bold text-white mb-12">
             <Trans i18nKey="quote" />
           </h2>
           <div className="flex flex-col sm:flex-row justify-center items-center gap-10">
