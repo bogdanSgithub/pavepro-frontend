@@ -1,19 +1,17 @@
-import mainLogo from '../assets/hero_1.webp';
-import Navbar from './navbar';
+import heroImage from '../assets/hero_1.webp';
 import { Button } from './ui/button';
 
 export default function Hero() {
   return (
     <section
-      className="relative h-[100vh] bg-cover bg-center"
-      style={{ backgroundImage: `url(${mainLogo})` }}
+      className="relative h-[85vh] bg-cover bg-center"
+      style={{ backgroundImage: `url(${heroImage})` }}
     >
       <div className="absolute inset-0 bg-black/60 z-0" />
-      <div className="relative z-10">
-        <Navbar />
+      <div className="relative z-10 h-full flex items-center justify-center">
 
-        <div className="h-full flex flex-col items-center justify-center text-center px-4 mt-40">
-          <h2 className="text-4xl md:text-6xl font-bold text-white mb-6">
+        <div className="flex flex-col items-center justify-center text-center px-4">
+          <h2 className="text-4xl md:text-6xl font-bold text-white mb-12">
             Everything Clean, <br></br>Around You
           </h2>
           <div className="flex flex-col sm:flex-row justify-center items-center gap-10">

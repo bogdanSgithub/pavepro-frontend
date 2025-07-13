@@ -2,11 +2,10 @@ import { Button } from "@/components/ui/button";
 
 export default function Navbar() {
   return (
-    <div className="w-full pt-10 py-4 flex justify-center">
-      <nav className="w-[80%] bg-white backdrop-blur-md rounded-xl shadow-md px-6 py-4 flex items-center justify-between">
+      <nav className="px-14 py-3 flex items-center justify-between">
         {/* Left: Logo */}
         <div className="flex-1 text-left">
-          <h1 className="text-5xl font-bold text-primary">PavéPRO</h1>
+          <h1 className="text-5xl font-bold text-primary font-serif font-bold">PavéPRO</h1>
         </div>
 
         {/* Center: Navigation links */}
@@ -21,6 +20,5 @@ export default function Navbar() {
           <Button variant={"important"} className="text-base px-10 py-5">GET AN ESTIMATE</Button>
         </div>
       </nav>
-    </div>
   );
 }
