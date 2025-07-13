@@ -48,9 +48,9 @@ export default function Portfolio() {
     <div
       ref={videoRef}
       className="w-1/2 mx-auto relative mt-16 overflow-hidden rounded-xl shadow-lg"
-                style={{
-            boxShadow: '0 0 8px rgba(0, 0, 0, 0.5)' // glow effect (customizable color & size)
-            }}
+          style={{
+      boxShadow: '0 0 8px rgba(0, 0, 0, 0.5)' // glow effect (customizable color & size)
+      }}
     >
       <video
         className="w-full h-full object-cover object-center"
