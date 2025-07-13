@@ -45,24 +45,19 @@ export default function Portfolio() {
       </div>
 
       {/* Video with overlay */}
-    <div
-      ref={videoRef}
-      className="w-1/2 mx-auto relative mt-16 overflow-hidden rounded-xl shadow-lg"
-          style={{
-      boxShadow: '0 0 8px rgba(0, 0, 0, 0.5)' // glow effect (customizable color & size)
-      }}
-    >
+    <div className="w-full max-w-4xl mx-auto mt-16 relative overflow-hidden rounded-xl shadow-lg">
       <video
+        ref={videoRef}
         className="w-full h-full object-cover object-center"
-        src={video}
-        autoPlay={inView}
+        src={video} // Make sure it's inside `public/videos/`
         muted
         loop
         playsInline
+        autoPlay
       />
 
       {/* Overlay */}
-      <div className="absolute inset-0 bg-black/50 flex flex-col justify-center items-center text-center text-white px-4">
+      <div className="absolute inset-0 bg-black/70 md:bg-black/50 flex flex-col justify-center items-center text-center text-white px-4">
         <h3 className="text-2xl md:text-4xl font-bold mb-4">{t('portfolio.videoTitle')}</h3>
         <Button variant="outline" className="text-base px-8 py-4">
           {t('portfolio.cta')}

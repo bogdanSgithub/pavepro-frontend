@@ -18,8 +18,8 @@ export default function Hero() {
             <Trans i18nKey="quote" />
           </h2>
           <div className="flex flex-col sm:flex-row justify-center items-center gap-10">
-            <Button className="text-md px-10 py-5" variant="outline">{t('estimate')}</Button>
-            <Button className="text-md px-10 py-5" variant="outline">
+            <Button className="text-xl px-14 py-6" variant="outline">{t('estimate')}</Button>
+            <Button className="text-xl px-14 py-6" variant="outline">
               {t('call')}
             </Button>
           </div>
