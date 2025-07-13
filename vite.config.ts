@@ -11,4 +11,9 @@ export default defineConfig({
       "@": path.resolve(__dirname, "./src"),
     },
   },
+  server: {
+    host: true, // 👈 necessary to allow LAN/public access
+    allowedHosts: true, // 👈 or specify your ngrok subdomain(s)
+    port: 5173, // optional, can be omitted
+  },
 })
