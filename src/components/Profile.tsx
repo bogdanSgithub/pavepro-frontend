@@ -3,7 +3,6 @@ import profileImage from "../assets/profile.webp";
 import vector1 from '@/assets/vector1.svg';
 import vector2 from '@/assets/vector1.svg';
 import vector3 from '@/assets/vector1.svg';
-import { Button } from '@/components/ui/button';
 
 export default function Profile() {
   const { t } = useTranslation();
@@ -38,9 +37,6 @@ export default function Profile() {
 
             {/* One centered below */}
             <img src={vector3} alt="Vector 3" className="w-full max-w-32 mx-auto" />
-
-            {/* Button */}
-            <Button variant={"important"} className="text-base px-10 py-5">{t('estimate')}</Button>
         </div>
       </article>
     </section>

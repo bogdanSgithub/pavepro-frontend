@@ -19,7 +19,7 @@ export default function Navbar() {
         {/* Center: Navigation links */}
         <div className="flex-1 flex justify-center space-x-6">
           <Button variant="link" className="text-black mx-0 text-base">{t('home')}</Button>
-          <Button variant="link" className="text-black mx-0 text-base">{t('services')}</Button>
+          <Button variant="link" className="text-black mx-0 text-base">Services</Button>
           <Button variant="link" className="text-black mx-0 text-base">{t('contact')}</Button>
         </div>
 

@@ -1,11 +1,25 @@
 { 
   "home": "Home",
-  "services": "Services",
   "contact": "Contact",
   "estimate": "Get an Estimate",
   "call": "Call Us",
   "quote": "Professional,<br />Protected,<br />Clean",
   "promotional": "30 Days Free Warranty",
   "profileTitle": "Dirty Home? Dirty Business?<br />We Would Love To <0>Service You!<0/>",
-  "profileText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam consequat at orci quis placerat. Praesent quis nibh a metus aliquet malesuada. Integer ornare vulputate ex et rutrum. Mauris volutpat risus ac arcu ultricies rutrum. Suspendisse rutrum ut libero imperdiet commodo. Morbi eu mollis sapien, quis condimentum ante."
+  "profileText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam consequat at orci quis placerat. Praesent quis nibh a metus aliquet malesuada. Integer ornare vulputate ex et rutrum. Mauris volutpat risus ac arcu ultricies rutrum. Suspendisse rutrum ut libero imperdiet commodo. Morbi eu mollis sapien, quis condimentum ante.",
+  "servicesTitle": "How Can We Best <0>Serve You?<0/>",
+  "services": {
+    "tab1": {
+      "title": "Paver Cleaning & Sealing",
+      "description": "Thorough cleaning followed by sand filling and sealant application to enhance the appearance and durability of your paving stones."
+    },
+    "tab2": {
+      "title": "Restoration & Repair",
+      "description": "Leveling and depth adjustment of paving stones to correct imperfections and restore structural integrity and surface aesthetics."
+    },
+    "tab3": {
+      "title": "Stain Treatment",
+      "description": "Cleaning of large concrete surfaces and other exterior areas requiring special attention."
+    }
+  }
 }

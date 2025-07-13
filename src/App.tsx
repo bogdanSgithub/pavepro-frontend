@@ -3,6 +3,7 @@ import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
 import Portfolio from "./components/Portfolio";
 import Profile from "./components/Profile";
+import Services from "./components/Services";
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
       <Navbar/>
       <Hero />
       <Profile/>
+      <Services/>
       <Portfolio/>
     </main>
   );
