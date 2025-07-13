@@ -1,7 +1,10 @@
 import heroImage from '../assets/hero_1.webp';
 import { Button } from './ui/button';
+import { useTranslation, Trans } from 'react-i18next';
 
 export default function Hero() {
+    const { t } = useTranslation();
+
   return (
     <section
       className="relative h-[85vh] bg-cover bg-center"
@@ -12,12 +15,12 @@ export default function Hero() {
 
         <div className="flex flex-col items-center justify-center text-center px-4">
           <h2 className="text-4xl md:text-6xl font-bold text-white mb-12">
-            Everything Clean, <br></br>Around You
+            <Trans i18nKey="quote" />
           </h2>
           <div className="flex flex-col sm:flex-row justify-center items-center gap-10">
-            <Button className="text-md px-10 py-5" variant="outline">GET AN ESTIMATE</Button>
+            <Button className="text-md px-10 py-5" variant="outline">{t('estimate')}</Button>
             <Button className="text-md px-10 py-5" variant="outline">
-              CALL (123) 456-7890
+              {t('call')}
             </Button>
           </div>
         </div>
