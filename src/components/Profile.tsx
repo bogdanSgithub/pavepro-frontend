@@ -9,8 +9,8 @@ export default function Profile() {
   const { t } = useTranslation();
 
   return (
-    <section className="flex flex-col md:flex-row items-start gap-8 px-52 py-24">
-      <figure className="w-full md:w-1/2 flex justify-end">
+    <section className="flex flex-col md:flex-row items-start gap-8 md:px-12 lg:px-52 py-24">
+      <figure className="w-full md:w-1/2 flex justify-center md:justify-end">
         <img
           src={profileImage}
           alt={t('profileImageAlt')}
