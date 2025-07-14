@@ -26,5 +26,22 @@
     "title": "Our Portfolio",
     "videoTitle": "Want To See More?",
     "cta": "View Gallery"
+  },
+  "testimonials": {
+    "title": "What people say",
+    "reviews": [
+      {
+        "name": "Alice Johnson",
+        "content": "This app completely changed the way I manage my tasks. Highly recommended!"
+      },
+      {
+        "name": "Mark Rivera",
+        "content": "Simple, elegant, and effective. Just what I needed."
+      },
+      {
+        "name": "Sophia Liu",
+        "content": "I love the clean design and easy navigation. Great job!"
+      }
+    ]
   }
 }

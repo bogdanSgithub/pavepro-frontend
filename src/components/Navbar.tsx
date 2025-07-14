@@ -13,7 +13,7 @@ export default function Navbar() {
     <nav className="lg:sticky top-0 z-50 bg-white shadow-sm">
       <div className="flex items-center justify-between">
         {/* Logo */}
-      <div className="text-center w-full lg:w-auto text-white px-10 py-4 relative"   
+      <div className="text-center w-full lg:w-auto text-white px-10 xl:px-20 py-4 relative"   
       style={{
         backgroundImage: 'linear-gradient(to right, black 10%, #3431C9 100%)',
       }}>
@@ -31,7 +31,7 @@ export default function Navbar() {
         {/* Desktop CTA + Lang */}
         <div className="hidden lg:flex items-center space-x-2">
           <Button variant="important" className="px-14 py-6 text-xl">{t("estimate")}</Button>
-          <Button variant="ghost" className="text-lg" onClick={() => i18n.changeLanguage(handleChangeLanguage())}>
+          <Button variant="ghost" className="text-lg ml-3 mr-5 p-0" onClick={() => i18n.changeLanguage(handleChangeLanguage())}>
             {handleChangeLanguage().toUpperCase()}
           </Button>
         </div>

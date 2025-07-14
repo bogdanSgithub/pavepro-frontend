@@ -4,6 +4,7 @@ import Navbar from "./components/Navbar";
 import Portfolio from "./components/Portfolio";
 import Profile from "./components/Profile";
 import Services from "./components/Services";
+import Testimonials from "./components/Testimonials";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <Profile/>
       <Services/>
       <Portfolio/>
+      <Testimonials/>
     </main>
   );
 }

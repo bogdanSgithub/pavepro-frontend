@@ -16,13 +16,13 @@ export default function Services() {
         ]} />
       </h2>
 
-      <Tabs defaultValue="pave" className="w-full">
-        <TabsList className="flex gap-4 mb-4 border-gray-200 bg-transparent p-0">
+      <Tabs defaultValue="pave" className="w-full flex flex-col">
+        <TabsList className="flex flex-wrap justify-center gap-4 mb-4 bg-transparent p-0 w-full max-w-full min-h-[48px]">
         <TabsTrigger
-            value="pave"
-            className="px-4 py-2 text-gray-700 data-[state=active]:text-primary"
+        value="pave"
+        className="px-4 py-2 text-gray-700 data-[state=active]:text-primary min-w-[100px]"
         >
-            {t('services.tab1.title')}
+        {t('services.tab1.title')}
         </TabsTrigger>
         <TabsTrigger
             value="restauration"
