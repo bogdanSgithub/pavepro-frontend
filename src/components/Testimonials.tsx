@@ -26,19 +26,19 @@ export default function Testimonials() {
       {/* Navigation Arrows */}
       <button
         ref={prevRef}
-        className="absolute left-0 top-1/2 z-10 p-2 border rounded-full bg-white shadow-md hover:bg-gray-100 transition"
+        className="absolute left-2 top-1/2 z-10 p-2 border rounded-full bg-white shadow-md hover:bg-gray-100 transition"
         aria-label="Previous review"
       >
         <ChevronLeft className="w-6 h-6" />
       </button>
       <button
         ref={nextRef}
-        className="absolute right-0 top-1/2 z-10 p-2 border rounded-full bg-white shadow-md hover:bg-gray-100 transition"
+        className="absolute right-2 top-1/2 z-10 p-2 border rounded-full bg-white shadow-md hover:bg-gray-100 transition"
         aria-label="Next review"
       >
         <ChevronRight className="w-6 h-6" />
       </button>
-
+      <div className='mx-11'>
       <Swiper
         modules={[Navigation]}
         navigation={{
@@ -89,6 +89,7 @@ export default function Testimonials() {
           ))}
         </ul>
       </Swiper>
+      </div>
     </section>
   );
 }
