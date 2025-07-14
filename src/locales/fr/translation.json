@@ -26,5 +26,22 @@
     "title": "Notre Portfolio",
     "videoTitle": "Voulez en Voir Plus ?",
     "cta": "Voir la Galerie"
+  },
+  "testimonials": {
+    "title": "Ce que disent nos clients",
+    "reviews": [
+      {
+        "name": "John G.",
+        "content": "I hired PavéPRO last summer to pressure wash my driveway. Flexible and reliable. I’ll definitely be using them again in the future!"
+      },
+      {
+        "name": "Charles",
+        "content": "Reliable and highly effective. Very satisfied with the results. Thanks!"
+      },
+      {
+        "name": "Majd A.",
+        "content": "Best pressure washing business in town great prices and great service"
+      }
+    ]
   }
 }

@@ -5,6 +5,7 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 import { useRef } from 'react';
+import googleLogo from "@/assets/google_logo.webp";
 
 export default function Testimonials() {
   const { t } = useTranslation();
@@ -17,26 +18,26 @@ export default function Testimonials() {
   }[];
 
   return (
-    <section className="py-12 px-4 lg:px-20">
-      <header className="flex justify-between items-center mb-6">
-        <h2 className="text-2xl font-semibold">{t('testimonials.title')}</h2>
-        <div className="flex gap-2">
-          <button
-            ref={prevRef}
-            className="p-2 border rounded-full hover:bg-gray-100 transition"
-            aria-label="Previous review"
-          >
-            <ChevronLeft className="w-5 h-5" />
-          </button>
-          <button
-            ref={nextRef}
-            className="p-2 border rounded-full hover:bg-gray-100 transition"
-            aria-label="Next review"
-          >
-            <ChevronRight className="w-5 h-5" />
-          </button>
-        </div>
-      </header>
+    <section className="py-16 px-4 lg:px-20 relative">
+      <h2 className="text-3xl font-bold text-center mb-10">
+        {t('testimonials.title')}
+      </h2>
+
+      {/* Navigation Arrows */}
+      <button
+        ref={prevRef}
+        className="absolute left-0 top-1/2 z-10 p-2 border rounded-full bg-white shadow-md hover:bg-gray-100 transition"
+        aria-label="Previous review"
+      >
+        <ChevronLeft className="w-6 h-6" />
+      </button>
+      <button
+        ref={nextRef}
+        className="absolute right-0 top-1/2 z-10 p-2 border rounded-full bg-white shadow-md hover:bg-gray-100 transition"
+        aria-label="Next review"
+      >
+        <ChevronRight className="w-6 h-6" />
+      </button>
 
       <Swiper
         modules={[Navigation]}
@@ -45,10 +46,10 @@ export default function Testimonials() {
           nextEl: nextRef.current,
         }}
         onBeforeInit={(swiper) => {
-        // @ts-expect-error Navigation elements assigned dynamically
-        swiper.params.navigation.prevEl = prevRef.current;
-        // @ts-expect-error Navigation elements assigned dynamically
-        swiper.params.navigation.nextEl = nextRef.current;
+          // @ts-expect-error navigation refs assigned after mount
+          swiper.params.navigation.prevEl = prevRef.current;
+          // @ts-expect-error navigation refs assigned after mount
+          swiper.params.navigation.nextEl = nextRef.current;
         }}
         spaceBetween={16}
         slidesPerView={1}
@@ -66,11 +67,22 @@ export default function Testimonials() {
           {reviews.map((review, index) => (
             <SwiperSlide key={index}>
               <li className="h-full">
-                <article className="h-full bg-white border rounded-xl p-6 shadow-sm flex flex-col justify-between">
-                  <p className="text-sm text-gray-600 mb-4">{review.content}</p>
-                  <footer className="text-sm font-medium text-gray-800 text-right">
-                    — {review.name}
-                  </footer>
+                <article className="h-full bg-white border rounded-xl py-6 px-8 shadow-sm flex flex-col justify-between">
+                  {/* Top section: name, stars, Google logo */}
+                  <div className="flex justify-between items-start mb-3">
+                    <div>
+                      <p className="font-bold text-2xl text-gray-800">{review.name}</p>
+                      <p className="text-yellow-500 text-2xl p-0">★★★★★</p>
+                    </div>
+                    <img
+                      src={googleLogo}
+                      alt="Google Logo"
+                      className="w-10 h-10 object-contain"
+                    />
+                  </div>
+
+                  {/* Review content */}
+                  <p className='text-lg'>{review.content}</p>
                 </article>
               </li>
             </SwiperSlide>

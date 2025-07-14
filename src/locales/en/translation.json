@@ -28,19 +28,19 @@
     "cta": "View Gallery"
   },
   "testimonials": {
-    "title": "What people say",
+    "title": "What Our Clients Say",
     "reviews": [
       {
-        "name": "Alice Johnson",
-        "content": "This app completely changed the way I manage my tasks. Highly recommended!"
+        "name": "John G.",
+        "content": "I hired PavéPRO last summer to pressure wash my driveway. Flexible and reliable. I’ll definitely be using them again in the future!"
       },
       {
-        "name": "Mark Rivera",
-        "content": "Simple, elegant, and effective. Just what I needed."
+        "name": "Charles",
+        "content": "Reliable and highly effective. Very satisfied with the results. Thanks!"
       },
       {
-        "name": "Sophia Liu",
-        "content": "I love the clean design and easy navigation. Great job!"
+        "name": "Majd A.",
+        "content": "Best pressure washing business in town great prices and great service"
       }
     ]
   }
