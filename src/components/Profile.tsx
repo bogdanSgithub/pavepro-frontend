@@ -17,10 +17,10 @@ export default function Profile() {
   </figure>
 
   <article className="w-full px-2 md:px-4">
-    <h2 className="text-3xl font-bold mb-4 text-center">
+    <h2 className="text-3xl lg:text-4xl font-bold mb-4 text-center lg:text-left">
       <Trans i18nKey="profileTitle" components={[<span className="text-primary" />]} />
     </h2>
-    <p className="text-gray-700 leading-relaxed mb-8 text-center">
+    <p className="text-gray-700  md:text-lg xl:text-xl leading-relaxed mb-8 text-center lg:text-left">
       {t('profileText')}
     </p>
 
@@ -38,7 +38,7 @@ export default function Profile() {
         <p className="text-lg font-medium">{t('Pristine')}</p>
       </div>
     </div>
-    <div className="flex justify-center mt-10">
+    <div className="flex justify-center mt-8">
       <Button variant="important" className="hover:scale-110 w-full px-14 py-6 text-xl">{t("estimate")}</Button>
     </div>
   </article>
