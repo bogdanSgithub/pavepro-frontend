@@ -7,7 +7,10 @@
   "promotional": "Garantie gratuite de 30 jours",
   "profileTitle": "Maison sale ? Entreprise sale ?<br/>Nous serions ravis de <0>vous servir !<0/>",
   "profileText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam consequat at orci quis placerat. Praesent quis nibh a metus aliquet malesuada. Integer ornare vulputate ex et rutrum. Mauris volutpat risus ac arcu ultricies rutrum. Suspendisse rutrum ut libero imperdiet commodo. Morbi eu mollis sapien, quis condimentum ante.",
-    "servicesTitle": "Comment Pouvons-Nous Mieux <0>Vous Servir ?<0/>",
+    "Professional": "Professionnel",
+  "Protected": "Protégé",
+  "Pristine": "Propre",  
+  "servicesTitle": "Comment Pouvons-Nous Mieux <0>Vous Servir ?<0/>",
   "services": {
     "tab1": {
       "title": "Nettoyage et Scellage de Pavés Unis",
