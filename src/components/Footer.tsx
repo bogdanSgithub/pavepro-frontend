@@ -2,6 +2,7 @@ import background from '@/assets/footer.jpg';
 import { MapPin, Phone } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { useTranslation, Trans } from 'react-i18next';
+import { Link } from 'react-router-dom';
 
 export default function Footer() {
   const { t } = useTranslation();
@@ -23,12 +24,16 @@ export default function Footer() {
                 <Trans i18nKey="quote" />
               </h2>
               <div className="flex flex-col sm:flex-row justify-center items-center gap-10">
+              <Link to="/estimation">
                 <Button className="text-lg md:text-xl px-14 py-6" variant="outline">
                   {t('estimate')}
                 </Button>
-                <Button className="text-lg md:text-xl px-14 py-6" variant="outline">
-                  {t('call')}
-                </Button>
+              </Link>
+              <a href="tel:+15149717709">
+              <Button className="text-xl px-14 py-6" variant="outline">
+                {t('call')}
+              </Button>
+              </a>
               </div>
             </div>
           </div>

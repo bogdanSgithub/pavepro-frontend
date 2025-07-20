@@ -1,23 +1,14 @@
-import Footer from "./components/Footer";
-import Header from "./components/Header";
-import Hero from "./components/Hero";
-import Navbar from "./components/Navbar";
-import Portfolio from "./components/Portfolio";
-import Profile from "./components/Profile";
-import Services from "./components/Services";
-import Testimonials from "./components/Testimonials";
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Home from '@/pages/Home';
+import Estimation from '@/pages/Estimation';
 
-export default function Home() {
+export default function App() {
   return (
-    <main>
-      <Header/>
-      <Navbar/>
-      <Hero />
-      <Profile/>
-      <Services/>
-      <Portfolio/>
-      <Testimonials/>
-      <Footer/>
-    </main>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/estimation" element={<Estimation />} />
+      </Routes>
+    </Router>
   );
 }

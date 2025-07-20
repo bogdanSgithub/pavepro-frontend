@@ -2,6 +2,7 @@ import { useTranslation, Trans } from 'react-i18next';
 import profileImage from "../assets/profile.webp";
 import { Briefcase, ShieldCheck, Sparkles } from 'lucide-react';
 import { Button } from './ui/button';
+import { Link } from 'react-router-dom';
 
 export default function Profile() {
   const { t } = useTranslation();
@@ -20,7 +21,7 @@ export default function Profile() {
     <h2 className="text-3xl lg:text-4xl font-bold mb-4 text-center lg:text-left">
       <Trans i18nKey="profileTitle" components={[<span className="text-primary" />]} />
     </h2>
-    <p className="text-gray-700  md:text-lg xl:text-xl leading-relaxed mb-8 text-center lg:text-left">
+    <p className="text-gray-600  md:text-lg xl:text-xl leading-relaxed mb-8 text-center lg:text-left">
       {t('profileText')}
     </p>
 
@@ -39,7 +40,9 @@ export default function Profile() {
       </div>
     </div>
     <div className="flex justify-center mt-8">
-      <Button variant="important" className="hover:scale-110 w-full px-14 py-6 text-xl">{t("estimate")}</Button>
+      <Link className='w-full' to="/estimation">
+        <Button variant="important" className="hover:scale-110 w-full px-14 py-6 text-xl">{t("estimate")}</Button>
+      </Link>
     </div>
   </article>
 </section>

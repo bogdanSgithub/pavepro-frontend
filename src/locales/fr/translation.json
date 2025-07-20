@@ -13,15 +13,15 @@
   "servicesTitle": "Comment Pouvons-Nous Mieux <0>Vous Servir ?<0/>",
   "services": {
     "tab1": {
-      "title": "Nettoyage et Scellage de Pavés Unis",
+      "title": "1ère Étape",
       "description": "Nettoyage approfondi suivi d’un remplissage de sable et d'une application de scellant afin de renforcer l'apparence et la durabilité du pavé."
     },
     "tab2": {
-      "title": "Restauration et Réparation",
+      "title": "2ème Étape",
       "description": "Alignement et ajustement de la profondeur des pavés afin de corriger toute imperfection et rétablir l'intégrité et l'esthétique de la surface."
     },
     "tab3": {
-      "title": "Traitement de Taches",
+      "title": "3ème Étape",
       "description": "Nettoyage de grandes surfaces en béton et toutes autres surfaces extérieures qui requièrent une attention particulière."
     }
   },

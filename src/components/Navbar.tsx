@@ -2,6 +2,7 @@ import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
+import { Link } from "react-router-dom";
 
 export default function Navbar() {
   const { i18n, t } = useTranslation();
@@ -30,7 +31,9 @@ export default function Navbar() {
 
         {/* Desktop CTA + Lang */}
         <div className="hidden lg:flex items-center space-x-2">
-          <Button variant="important" className="px-14 py-6 text-xl">{t("estimate")}</Button>
+          <Link className='w-full' to="/estimation">
+            <Button variant="important" className="px-14 py-6 text-xl">{t("estimate")}</Button>
+          </Link>
           <Button variant="ghost" className="text-lg ml-3 mr-5 p-0" onClick={() => i18n.changeLanguage(handleChangeLanguage())}>
             {handleChangeLanguage().toUpperCase()}
           </Button>
@@ -71,7 +74,9 @@ export default function Navbar() {
           <Button variant="link" className="text-black text-lg w-full text-center">{t("home")}</Button>
           <Button variant="link" className="text-black text-lg w-full text-center">Services</Button>
           <Button variant="link" className="text-black text-lg w-full text-center">{t("contact")}</Button>
-          <Button variant="important" className="w-full text-lg py-4">{t("estimate")}</Button>
+          <Link className='w-full' to="/estimation">
+            <Button variant="important" className="w-full text-lg py-4">{t("estimate")}</Button>
+          </Link>
           <Button
             variant="ghost"
             className="text-lg"

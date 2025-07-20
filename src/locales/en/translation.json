@@ -13,15 +13,15 @@
   "Pristine": "Pristine",
   "services": {
     "tab1": {
-      "title": "Paver Cleaning & Sealing",
+      "title": "1st Step",
       "description": "Thorough cleaning followed by sand filling and sealant application to enhance the appearance and durability of your paving stones."
     },
     "tab2": {
-      "title": "Restoration & Repair",
+      "title": "2nd Step",
       "description": "Leveling and depth adjustment of paving stones to correct imperfections and restore structural integrity and surface aesthetics."
     },
     "tab3": {
-      "title": "Stain Treatment",
+      "title": "3rd Step",
       "description": "Cleaning of large concrete surfaces and other exterior areas requiring special attention."
     }
   },

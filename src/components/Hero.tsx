@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import heroImage from '../assets/hero.jpg';
 import { Button } from './ui/button';
 import { useTranslation, Trans } from 'react-i18next';
@@ -18,10 +19,16 @@ export default function Hero() {
             <Trans i18nKey="quote" />
           </h2>
           <div className="flex flex-col sm:flex-row justify-center items-center gap-10">
-            <Button className="text-xl px-14 py-6" variant="outline">{t('estimate')}</Button>
+            <Link to="/estimation">
+              <Button className="text-lg md:text-xl px-14 py-6" variant="outline">
+                {t('estimate')}
+              </Button>
+            </Link>
+            <a href="tel:+15149717709">
             <Button className="text-xl px-14 py-6" variant="outline">
               {t('call')}
             </Button>
+            </a>
           </div>
         </div>
       </div>
