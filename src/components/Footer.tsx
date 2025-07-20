@@ -20,7 +20,7 @@ export default function Footer() {
           <div className="absolute inset-0 bg-gradient-to-b from-primary/30 sm:from-primary/50 to-primary" />
           <div className="relative z-10 flex items-center justify-center h-full text-center px-4">
             <div className="flex flex-col items-center justify-center max-w-4xl">
-              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-10">
+              <h2 className="text-left text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-10">
                 <Trans i18nKey="quote" />
               </h2>
               <div className="flex flex-col sm:flex-row justify-center items-center gap-10">

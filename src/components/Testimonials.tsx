@@ -6,7 +6,7 @@ import 'swiper/css/navigation';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 import { useRef, useEffect, useState } from 'react';
 import googleLogo from '@/assets/google_logo.webp';
-import backgroundImage from '@/assets/footer.jpg'; // Replace with your actual background
+import backgroundImage from '@/assets/testimonials.jpg'; // Replace with your actual background
 
 export default function Testimonials() {
   const { t } = useTranslation();
