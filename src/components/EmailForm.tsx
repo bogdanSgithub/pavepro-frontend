@@ -26,7 +26,7 @@ export default function EmailForm() {
     if (file) formData.append('images', file);
 
     try {
-      const res = await fetch('http://localhost:3000/email', {
+      const res = await fetch('http://192.168.0.62:3000/email', {
         method: 'POST',
         body: formData,
       });

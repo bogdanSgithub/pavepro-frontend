@@ -9,6 +9,7 @@ export default function Footer() {
 
   return (
     <footer className="w-full mt-20">
+      
       {/* Entire footer takes full height on mobile, 80vh on desktop */}
       <div className="flex flex-col h-[100vh] lg:h-[93vh]">
         {/* Background image section */}
