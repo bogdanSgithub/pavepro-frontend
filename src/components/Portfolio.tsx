@@ -27,7 +27,7 @@ export default function Portfolio() {
   ];
 
   return (
-    <section id="portfolio" className="px-6 md:px-20 py-24">
+    <section id="album" className="px-6 md:px-20 py-24">
       <h2 className="text-3xl font-bold text-primary mb-10">{t('portfolio.title')}</h2>
 
       {/* Image comparison sliders grid */}

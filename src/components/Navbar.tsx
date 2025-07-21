@@ -1,8 +1,9 @@
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { Button } from "@/components/ui/button";
-import { Menu, X } from "lucide-react";
+import { Menu, X, Phone } from "lucide-react";
 import { Link } from "react-router-dom";
+import NavLinks from "./NavLinks";
 
 export default function Navbar() {
   const { i18n, t } = useTranslation();
@@ -23,17 +24,18 @@ export default function Navbar() {
         </h1>
       </div>
         {/* Desktop Nav Links */}
-        <div className="hidden lg:flex absolute left-1/2 transform -translate-x-1/2 space-x-0 xl:space-x-6">
-          <Button variant="link" className="text-black text-lg">{t("home")}</Button>
-          <Button variant="link" className="text-black text-lg">Services</Button>
-          <Button variant="link" className="text-black text-lg">{t("contact")}</Button>
-        </div>
+        <NavLinks/>
 
         {/* Desktop CTA + Lang */}
         <div className="hidden lg:flex items-center space-x-2">
+          <Button variant="ghost" className="text-lg px-6 py-6 flex items-center gap-2">
+            <Phone className="w-5 h-5" />
+            (514) 123-4567
+          </Button>
           <Link className='w-full' to="/estimation">
             <Button variant="important" className="px-14 py-6 text-xl">{t("estimate")}</Button>
           </Link>
+
           <Button variant="ghost" className="text-lg ml-3 mr-5 p-0" onClick={() => i18n.changeLanguage(handleChangeLanguage())}>
             {handleChangeLanguage().toUpperCase()}
           </Button>
@@ -70,21 +72,60 @@ export default function Navbar() {
         </div>
 
         {/* Nav Links */}
-        <div className="flex flex-col items-center space-y-4 px-6 mt-4">
-          <Button variant="link" className="text-black text-lg w-full text-center">{t("home")}</Button>
-          <Button variant="link" className="text-black text-lg w-full text-center">Services</Button>
-          <Button variant="link" className="text-black text-lg w-full text-center">{t("contact")}</Button>
-          <Link className='w-full' to="/estimation">
-            <Button variant="important" className="w-full text-lg py-4">{t("estimate")}</Button>
-          </Link>
-          <Button
-            variant="ghost"
-            className="text-lg"
-            onClick={() => i18n.changeLanguage(handleChangeLanguage())}
-          >
-            {handleChangeLanguage().toUpperCase()}
+      <div className="flex flex-col items-center space-y-4 px-6 mt-4">
+        <Button
+          variant="link"
+          className="text-black text-lg w-full text-center"
+          onClick={() => {
+            document.getElementById("home")?.scrollIntoView({ behavior: "smooth" });
+            setIsOpen(false);
+          }}
+        >
+          {t("home")}
+        </Button>
+
+        <Button
+          variant="link"
+          className="text-black text-lg w-full text-center"
+          onClick={() => {
+            document.getElementById("services")?.scrollIntoView({ behavior: "smooth" });
+            setIsOpen(false);
+          }}
+        >
+          Services
+        </Button>
+
+        <Button
+          variant="link"
+          className="text-black text-lg w-full text-center"
+          onClick={() => {
+            document.getElementById("album")?.scrollIntoView({ behavior: "smooth" });
+            setIsOpen(false);
+          }}
+        >
+          {t("album")}
+        </Button>
+        <Button
+          variant="ghost"
+          className="w-full text-lg py-4 flex items-center justify-center gap-2"
+        >
+          <Phone className="w-5 h-5" />
+          (514) 123-4567
+        </Button>
+        <Link className='w-full' to="/estimation">
+          <Button variant="important" className="w-full text-lg py-4">
+            {t("estimate")}
           </Button>
-        </div>
+        </Link>
+
+        <Button
+          variant="ghost"
+          className="text-lg"
+          onClick={() => i18n.changeLanguage(handleChangeLanguage())}
+        >
+          {handleChangeLanguage().toUpperCase()}
+        </Button>
+      </div>
       </div>
     </nav>
   );
