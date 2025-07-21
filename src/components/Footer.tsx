@@ -8,7 +8,7 @@ export default function Footer() {
   const { t } = useTranslation();
 
   return (
-    <footer className="w-full mt-20">
+    <footer className="w-full mt-10">
       
       {/* Entire footer takes full height on mobile, 80vh on desktop */}
       <div className="flex flex-col h-[100vh] lg:h-[93vh]">

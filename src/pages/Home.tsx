@@ -6,6 +6,7 @@ import Portfolio from "../components/Portfolio";
 import Profile from "../components/Profile";
 import Steps from "../components/Steps";
 import Testimonials from "../components/Testimonials";
+import OtherService from "@/components/OtherService";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
       <Steps/>
       <Portfolio/>
       <Testimonials/>
+      <OtherService/>
       <Footer/>
     </main>
   );
