@@ -4,7 +4,7 @@ import Estimation from '@/pages/Estimation';
 
 export default function App() {
   return (
-    <Router>
+    <Router basename="/pavepro-frontend">
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/estimation" element={<Estimation />} />
