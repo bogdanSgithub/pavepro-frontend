@@ -1,5 +1,4 @@
 import Footer from "../components/Footer";
-import Header from "../components/Header";
 import Hero from "../components/Hero";
 import Navbar from "../components/Navbar";
 import Portfolio from "../components/Portfolio";
@@ -11,7 +10,6 @@ import OtherService from "@/components/OtherService";
 export default function Home() {
   return (
     <main>
-      <Header/>
       <Navbar/>
       <Hero />
       <Profile/>

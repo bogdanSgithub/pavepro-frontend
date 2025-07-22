@@ -66,9 +66,18 @@ export default function Testimonials() {
                   nextEl: nextRef.current,
                 }}
                 onSwiper={(swiper) => {
-                  if (prevRef.current && nextRef.current) {
+                  if (
+                    swiper.params.navigation &&
+                    typeof swiper.params.navigation === 'object' &&
+                    prevRef.current &&
+                    nextRef.current
+                  ) {
+                    // Set the elements
                     swiper.params.navigation.prevEl = prevRef.current;
                     swiper.params.navigation.nextEl = nextRef.current;
+
+                    // Re-init navigation
+                    swiper.navigation.destroy(); // destroy before re-init
                     swiper.navigation.init();
                     swiper.navigation.update();
                   }
