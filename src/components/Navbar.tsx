@@ -30,7 +30,9 @@ export default function Navbar() {
         <div className="hidden lg:flex items-center space-x-2">
           <Button variant="ghost" className="text-lg px-6 py-6 flex items-center gap-2">
             <Phone className="w-5 h-5" />
-            (514) 123-4567
+            <a href="tel:+15149717709">
+              (514) 971-7709
+            </a>
           </Button>
           <Link className='w-full' to="/estimation">
             <Button variant="important" className="px-14 py-6 text-xl">{t("estimate")}</Button>
@@ -110,7 +112,9 @@ export default function Navbar() {
           className="w-full text-lg py-4 flex items-center justify-center gap-2"
         >
           <Phone className="w-5 h-5" />
-          (514) 123-4567
+          <a href="tel:+15149717709">
+          (514) 971-7709
+          </a>
         </Button>
         <Link className='w-full' to="/estimation">
           <Button variant="important" className="w-full text-lg py-4">

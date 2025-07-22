@@ -5,9 +5,9 @@
   "call": "Call Us",
   "quote": "Professional,<br />Protected,<br />Pristine",
   "promotional": "30 Days Free Warranty",
-  "profileTitle": "PavéPRO, Your Trusted Partner for Expert Pressure Washing",
-  "profileText": "We specialize in professional pressure washing for residential, commercial, and industrial properties. From driveways and parking lots to storefronts and large industrial surfaces, we clean, restore, and protect with detailed, attentive care. Our services include pressure washing, paver sanding, and sealing: all designed to keep your property looking its absolute best.",
-  "servicesTitle": "How Can We Best <0>Serve You?<0/>",
+  "profileTitle": "Your Trusted Partner for Paver Maintenance Services",
+  "profileText": "We specialize in professional pressure washing for residential, commercial, and industrial properties. From driveways and parking lots to storefronts and large industrial surfaces, we clean, restore, and protect with detailed, attentive care. We provide pressure washing, paver sanding and sealing to keep your property looking its absolute best.",
+  "servicesTitle": "Bring Your Pavers Back to Life",
   "Professional": "Professional",
   "Protected": "Protected",
   "Pristine": "Pristine",
@@ -34,7 +34,7 @@
     "title": "What Our Clients Say",
     "reviews": [
       {
-        "name": "John G.",
+        "name": "John",
         "content": "I hired PavéPRO last summer to pressure wash my driveway. Flexible and reliable. I’ll definitely be using them again in the future!"
       },
       {
@@ -42,9 +42,13 @@
         "content": "Reliable and highly effective. Very satisfied with the results. Thanks!"
       },
       {
-        "name": "Majd A.",
+        "name": "Majd",
         "content": "Best pressure washing business in town great prices and great service"
       }
     ]
+  },
+  "other_service": {
+    "title": "Complementary Levelling Service",
+    "description": "We offer a complimentary levelling service when needed. If your pavers are uneven or sunken, we carefully take them apart, level the base, and reinstall the pavers for a smooth, even surface."
   }
 }

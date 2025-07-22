@@ -58,7 +58,9 @@ export default function Footer() {
               <h3 className="text-xl font-semibold mb-2">Contact</h3>
               <p className="flex items-center gap-2">
                 <Phone className="w-5 h-5" />
-                (123) 456-7890
+                <a href="tel:+15149717709">
+                (514) 971-7709
+                </a>
               </p>
             </div>
           </div>
