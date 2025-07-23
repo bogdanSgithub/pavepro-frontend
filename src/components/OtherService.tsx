@@ -39,8 +39,8 @@ export default function OtherService() {
             className="w-full h-full object-cover"
           />
         </figure>
-        <Link to="/contact-us" className="w-full md:w-auto mt-8">
-          <Button className="hover:scale-107 md:hover:scale-112 w-full md:w-auto text-lg md:text-xl px-14 py-6" variant="important">
+        <Link to="/contact-us" className="lg:hidden w-full md:w-auto mt-8">
+          <Button className="w-full md:w-auto text-lg md:text-xl px-14 py-6" variant="important">
             {t('estimate')}
           </Button>
         </Link>
