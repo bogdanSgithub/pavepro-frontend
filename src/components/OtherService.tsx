@@ -32,7 +32,7 @@ export default function OtherService() {
 
       {/* Right column: Image B (only on md+) */}
       <div className="px-2 md:px-4 w-full h-full md:w-1/2 grid place-items-center text-center mx-auto">
-        <figure className="w-full aspect-[3/4] md:w-auto md:aspect-[3/5] h-auto overflow-hidden rounded-xl shadow-lg ">
+        <figure className="w-full aspect-[3/4] md:w-auto md:aspect-[3/5] h-auto overflow-hidden rounded-xl">
           <img
             src={secondaryImage}
             alt={t('profileImageAlt')}

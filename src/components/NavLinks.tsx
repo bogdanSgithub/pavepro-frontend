@@ -12,7 +12,7 @@ export default function NavLinks() {
   };
 
   return (
-    <div className="hidden lg:flex absolute left-1/2 transform -translate-x-1/2 space-x-0 xl:space-x-6">
+    <div className="hidden lg:flex absolute left-1/2 transform -translate-x-1/2">
       <Button variant="link" className="text-black text-lg" onClick={() => scrollTo("home")}>
         {t("home")}
       </Button>
