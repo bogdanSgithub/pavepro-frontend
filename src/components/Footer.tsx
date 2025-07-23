@@ -44,28 +44,31 @@ export default function Footer() {
         <div className="bg-primary text-white px-6 py-10 lg:px-20">
           <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10">
             <div>
-              <h3 className="text-xl font-semibold mb-2">Working Hours</h3>
-              <p>Monday – Sunday: 8am – 8pm</p>
+              <h3 className="text-xl font-semibold mb-2">{t('footer.workingHours.title')}</h3>
+              <p>{t('footer.workingHours.hours')}</p>
             </div>
             <div>
-              <h3 className="text-xl font-semibold mb-2">Location</h3>
+              <h3 className="text-xl font-semibold mb-2">{t('footer.location.title')}</h3>
               <p className="flex items-center gap-2">
+              <a
+              href="https://www.google.com/maps/place/Pav%C3%A9PRO/@45.5026915,-73.6914965,10z/data=!3m1!4b1!4m6!3m5!1s0x664a5c7f1663440f:0x82c232bd44748911!8m2!3d45.5026915!4d-73.6914965!16s%2Fg%2F11wr3l0g8k?hl=en&entry=ttu&g_ep=EgoyMDI1MDcyMC4wIKXMDSoASAFQAw%3D%3D"
+              target="_blank" className='flex items-center gap-2'
+              rel="noopener noreferrer">                
                 <MapPin className="w-5 h-5" />
-                Greater Montreal Area
+                {t('footer.location.area')}
+              </a>
               </p>
             </div>
             <div>
-              <h3 className="text-xl font-semibold mb-2">Contact</h3>
+              <h3 className="text-xl font-semibold mb-2">{t('footer.contact.title')}</h3>
               <p className="flex items-center gap-2">
                 <Phone className="w-5 h-5" />
-                <a href="tel:+15149717709">
-                (514) 971-7709
-                </a>
+                <a href="tel:+15149717709">(514) 971-7709</a>
               </p>
             </div>
           </div>
           <div className="mt-8 text-sm text-center text-white/80">
-            © {new Date().getFullYear()} PavéPRO. All rights reserved.
+            © {new Date().getFullYear()} PavéPRO. {t('footer.rights')}
           </div>
         </div>
       </div>

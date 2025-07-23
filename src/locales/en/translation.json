@@ -55,16 +55,30 @@
     "description": "We offer a complimentary levelling service when needed. If your pavers are uneven or sunken, we carefully take them apart, level the base, and reinstall the pavers for a smooth, even surface."
   },
   "region": {
-    "title": "Cleaning The Greater Montreal Area!",
-      "cities": [
-    "Montreal",
-    "Laval",
-    "Longueuil",
-    "Brossard",
-    "West Island",
-    "Châteauguay",
-    "Vaudreuil-Dorion",
-    "Île-Perrot"
-  ]
+    "title": "À votre service dans la grande région de Montréal !",
+    "cities": [
+      "Montréal",
+      "Laval",
+      "Longueuil",
+      "Brossard",
+      "West Island",
+      "Châteauguay",
+      "Vaudreuil-Dorion",
+      "Île-Perrot"
+    ]
+  },
+    "footer": {
+    "workingHours": {
+      "title": "Working Hours",
+      "hours": "Monday – Sunday: 8am – 8pm"
+    },
+    "location": {
+      "title": "Location",
+      "area": "Greater Montreal Area"
+    },
+    "contact": {
+      "title": "Contact"
+    },
+    "rights": "All rights reserved."
   }
 }

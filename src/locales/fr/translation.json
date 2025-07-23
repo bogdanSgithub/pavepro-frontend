@@ -1,32 +1,35 @@
 { 
   "home": "Accueil",
-  "album": "Gallery",
+  "album": "Galerie",
   "estimate": "Soumission Gratuite",
   "call": "Appelez-nous",
-  "quote": "<0>Pro</0>fessionnel<br /><1>Pro</1>tégé<br /><2>Pro</2>pre",
+  "quote": "Professionnel<br />Protégé<br />Propre",
   "promotional": "Garantie gratuite de 30 jours",
-  "profileTitle": "Maison sale ? Entreprise sale ?<br/>Nous serions ravis de <0>vous servir !<0/>",
-  "profileText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam consequat at orci quis placerat. Praesent quis nibh a metus aliquet malesuada. Integer ornare vulputate ex et rutrum. Mauris volutpat risus ac arcu ultricies rutrum. Suspendisse rutrum ut libero imperdiet commodo. Morbi eu mollis sapien, quis condimentum ante.",
-    "Professional": "Professionnel",
+  "profileTitle": "Votre <0>Partenaire</0> de Confiance pour l’Entretien de Pavés",
+  "profileText": "Nous sommes spécialisés dans le nettoyage haute pression professionnel pour les propriétés résidentielles, commerciales et industrielles. Des allées et stationnements aux devantures de magasins et grandes surfaces industrielles, nous nettoyons, restaurons et protégeons avec soin et précision. Nous offrons des services de lavage à pression, de sablage et de scellement des pavés pour que votre propriété soit toujours à son meilleur.",
+  "Professional": "Professionnel",
   "Protected": "Protégé",
   "Pristine": "Propre",  
   "servicesTitle": "Comment Pouvons-Nous Mieux <0>Vous Servir ?<0/>",
   "services": {
     "tab1": {
-      "title": "1ère Étape",
-      "description": "Nettoyage approfondi suivi d’un remplissage de sable et d'une application de scellant afin de renforcer l'apparence et la durabilité du pavé."
+      "title": "1ʳᵉ Étape",
+      "title2": "Nettoyage",
+      "description": "Nous commençons par éliminer les mauvaises herbes et la végétation indésirable, puis nous retirons les taches (huile, rouille, moisissures, etc.) avant d’extraire en profondeur le sable ancien et instable entre les pavés. Cette étape permet de restaurer la surface et de la préparer adéquatement pour la suite du traitement."
     },
     "tab2": {
-      "title": "2ème Étape",
-      "description": "Alignement et ajustement de la profondeur des pavés afin de corriger toute imperfection et rétablir l'intégrité et l'esthétique de la surface."
+      "title": "2ᵉ Étape",
+      "title2": "Sablage",
+      "description": "Ensuite, nous remplissons les joints avec un sable polymère de haute qualité, garantissant une fixation solide et résistante aux mauvaises herbes. Ce sable est ensuite humidifié pour activer ses agents liants, ce qui permet de verrouiller les pavés en place et d’éviter les déplacements."
     },
     "tab3": {
-      "title": "3ème Étape",
-      "description": "Nettoyage de grandes surfaces en béton et toutes autres surfaces extérieures qui requièrent une attention particulière."
+      "title": "3ᵉ Étape",
+      "title2": "Scellage",
+      "description": "Pour finir, nous appliquons un scellant haut de gamme qui solidifie le sable et rehausse l’apparence des pavés avec une finition nette et élégante. Ce traitement protège la surface contre les taches, les rayons UV et l’infiltration d’eau, assurant une durabilité et une beauté à long terme."
     }
   },
   "portfolio": {
-    "title": "Notre Portfolio",
+    "title": "Notre <0>Galerie</0>",
     "videoTitle": "Voulez en Voir Plus ?",
     "cta": "Voir la Galerie"
   },
@@ -35,20 +38,47 @@
     "reviews": [
       {
         "name": "John",
-        "content": "I hired PavéPRO last summer to pressure wash my driveway. Flexible and reliable. I’ll definitely be using them again in the future!"
+        "content": "J’ai fait appel à PavéPRO l’été dernier pour le lavage à pression de mon entrée. Flexible et fiable. Je ferai de nouveau affaire avec eux sans hésiter !"
       },
       {
         "name": "Charles",
-        "content": "Reliable and highly effective. Very satisfied with the results. Thanks!"
+        "content": "Fiable et très efficace. Je suis très satisfait du résultat. Merci !"
       },
       {
         "name": "Majd",
-        "content": "Best pressure washing business in town great prices and great service"
+        "content": "Le meilleur service de lavage à pression en ville, excellents prix et excellent service."
       }
     ]
   },
-    "other_service": {
-    "title": "Complementary Levelling Service",
-    "description": "We offer a complimentary levelling service when needed. If your pavers are uneven or sunken, we carefully take them apart, level the base, and reinstall the pavers for a smooth, even surface."
+  "other_service": {
+    "title": "Service de Nivellement Complémentaire",
+    "description": "Nous proposons un service de nivellement complémentaire lorsque cela est nécessaire. Si certains pavés sont irréguliers ou affaissés, nous les retirons avec soin, remettons la base à niveau, puis les réinstallons pour assurer une surface lisse et uniforme."
+  },
+    "region": {
+    "title": "À votre service dans la grande région de Montréal !",
+      "cities": [
+    "Montreal",
+    "Laval",
+    "Longueuil",
+    "Brossard",
+    "West Island",
+    "Châteauguay",
+    "Vaudreuil-Dorion",
+    "Île-Perrot"
+    ]
+  },
+    "footer": {
+    "workingHours": {
+      "title": "Heures d'ouverture",
+      "hours": "Lundi – Dimanche : 8h – 20h"
+    },
+    "location": {
+      "title": "Localisation",
+      "area": "Grande région de Montréal"
+    },
+    "contact": {
+      "title": "Contact"
+    },
+    "rights": "Tous droits réservés."
   }
 }
