@@ -8,7 +8,7 @@ export default function Profile() {
   const { t } = useTranslation();
 
   return (
-    <section className="flex flex-col md:flex-row items-start gap-8 px-4 sm:px-6 py-24 overflow-x-hidden max-w-screen-xl mx-auto">
+    <section className="flex flex-col md:flex-row items-start gap-8 px-4 sm:px-6 my-16 md:my-32 overflow-x-hidden max-w-screen-xl mx-auto">
   <figure className="w-full flex justify-center md:justify-end">
     <img
       src={profileImage}
@@ -21,11 +21,11 @@ export default function Profile() {
     <h2 className="text-3xl lg:text-4xl font-bold mb-4 text-center lg:text-left">
       <Trans i18nKey="profileTitle" components={[<span className="text-primary" />]} />
     </h2>
-    <p className="text-gray-600  md:text-lg xl:text-xl leading-relaxed mb-8 text-justify lg:text-left">
+    <p className="text-gray-600  md:text-lg xl:text-xl leading-relaxed mb-6 md:mb-8 text-justify lg:text-left">
       {t('profileText')}
     </p>
 
-    <div className="grid gap-6 grid-cols-2 lg:grid-cols-3 place-items-center">
+    <div className="grid gap-3 md:gap-6 grid-cols-2 lg:grid-cols-3 place-items-center">
       <div className="flex items-center gap-2 md:gap-4">
         <Briefcase className="w-8 h-8 text-primary" />
         <p className="text-lg font-medium">{t('Professional')}</p>
@@ -39,7 +39,7 @@ export default function Profile() {
         <p className="text-lg font-medium">{t('Pristine')}</p>
       </div>
     </div>
-    <div className="flex justify-center mt-8">
+    <div className="flex justify-center mt-6 md:mt-8">
       <Link className='w-full' to="/contact-us">
         <Button variant="important" className="w-full px-14 py-6 text-xl">{t("estimate")}</Button>
       </Link>

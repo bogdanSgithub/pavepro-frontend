@@ -6,7 +6,7 @@ export default function Region() {
   const cities = t('region.cities', { returnObjects: true }) as string[];
 
   return (
-    <section className="flex flex-col md:flex-row items-start gap-8 px-4 sm:px-6 py-24 overflow-x-hidden max-w-screen-xl mx-auto">
+    <section className="flex flex-col md:flex-row items-start gap-8 px-4 sm:px-6 mb-20 md:mb-32 overflow-x-hidden max-w-screen-xl mx-auto">
       <figure className="w-full flex justify-center md:justify-end">
         <img
           src={image}

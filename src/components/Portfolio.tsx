@@ -27,7 +27,7 @@ export default function Portfolio() {
   ];
 
   return (
-    <section id="album" className="px-6 md:px-20 py-24">
+    <section id="album" className="px-6 md:px-20 mb-20 md:mb-32">
       <h2 className="text-3xl text-center font-bold text-black mb-10">
                 <Trans i18nKey="portfolio.title" 
                 components={[
