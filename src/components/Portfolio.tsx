@@ -10,7 +10,7 @@ import before3 from '@/assets/before_3.jpg';
 import after3 from '@/assets/after_3.jpg';
 import before4 from '@/assets/before_4.jpg';
 import after4 from '@/assets/after_4.jpg';
-import video from '@/assets/portfolio.mp4';
+import video from '@/assets/old_portfolio.mp4';
 import { useEffect } from 'react';
 
 export default function Portfolio() {
@@ -62,7 +62,7 @@ export default function Portfolio() {
       />
 
       {/* Overlay */}
-      <div className="absolute inset-0 bg-black/70 md:bg-black/50 flex flex-col justify-center items-center text-center text-white px-4">
+      <div className="absolute inset-0 bg-black/70 md:bg-black/30 flex flex-col justify-center items-center text-center text-white px-4">
         <h3 className="text-2xl md:text-4xl font-bold mb-5 md:mb-8">{t('portfolio.videoTitle')}</h3>
         <a
           href="https://www.google.com/search?sca_esv=aadfb58771dae880&hl=en&gl=ca&output=search&kgmid=/g/11wr3l0g8k&q=Pav%C3%A9PRO&shndl=30&source=sh/x/loc/act/m1/3&kgs=1db473bb5ff9c47e#lpg=cid:CgIgAQ%3D%3D,ik:CAoSLEFGMVFpcE02aktPN0ctbFFxczF3a1pfcjRtWDIzazNYWVFrYXhORzR3THJo"
