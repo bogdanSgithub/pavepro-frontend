@@ -5,10 +5,13 @@ import { Button } from '@/components/ui/button';
 import { Label } from '@/components/ui/label';
 
 export default function EmailForm() {
-  const [to, setTo] = useState('');
-  const [subject, setSubject] = useState('');
-  const [text, setText] = useState('');
-  const [file, setFile] = useState<File | null>(null);
+  const [firstName, setFirstName] = useState('');
+  const [lastName, setLastName] = useState('');
+  const [email, setEmail] = useState('');
+  const [phone, setPhone] = useState('');
+  const [address, setAddress] = useState('');
+  const [message, setMessage] = useState('');
+  const [files, setFiles] = useState<FileList | null>(null);
   const [loading, setLoading] = useState(false);
   const [success, setSuccess] = useState<string | null>(null);
   const [error, setError] = useState<string | null>(null);
@@ -20,28 +23,36 @@ export default function EmailForm() {
     setError(null);
 
     const formData = new FormData();
-    formData.append('to', to);
-    formData.append('subject', subject);
-    formData.append('text', text);
-    if (file) formData.append('images', file);
+    formData.append('firstName', firstName);
+    formData.append('lastName', lastName);
+    formData.append('email', email);
+    formData.append('phone', phone);
+    formData.append('address', address);
+    formData.append('message', message);
+    if (files) {
+      Array.from(files).forEach((file) => {
+        formData.append('attachments', file);
+      });
+    }
 
     try {
-      const res = await fetch('http://192.168.0.62:3000/email', {
+      const res = await fetch('http://localhost:3000/email', {
         method: 'POST',
         body: formData,
       });
 
       const data = await res.json();
 
-      if (!res.ok) {
-        throw new Error(data.error || 'Something went wrong');
-      }
+      if (!res.ok) throw new Error(data.error || 'Something went wrong');
 
       setSuccess(data.message);
-      setTo('');
-      setSubject('');
-      setText('');
-      setFile(null);
+      setFirstName('');
+      setLastName('');
+      setEmail('');
+      setPhone('');
+      setAddress('');
+      setMessage('');
+      setFiles(null);
     } catch (err: any) {
       setError(err.message);
     } finally {
@@ -50,51 +61,76 @@ export default function EmailForm() {
   };
 
   return (
-    <section className="w-full max-w-xl mx-auto mt-16 px-4">
-      <h2 className="text-3xl font-bold mb-6 text-center">Send an Email</h2>
+    <section className="w-full max-w-2xl mx-auto mt-16 px-4">
+      <h2 className="text-3xl font-bold mb-6 text-center">Get a Quote Today</h2>
       <form onSubmit={handleSubmit} className="space-y-6">
         <div>
-          <Label htmlFor="to">To</Label>
+          <Label>Name</Label>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-1">
+            <Input
+              placeholder="First Name"
+              value={firstName}
+              onChange={(e) => setFirstName(e.target.value)}
+              required
+            />
+            <Input
+              placeholder="Last Name"
+              value={lastName}
+              onChange={(e) => setLastName(e.target.value)}
+              required
+            />
+          </div>
+        </div>
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div>
+            <Label>Email</Label>
+            <Input
+              type="email"
+              placeholder="you@example.com"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              required
+            />
+          </div>
+          <div>
+            <Label>Phone Number</Label>
+            <Input
+              type="tel"
+              placeholder="(555) 555-5555"
+              value={phone}
+              onChange={(e) => setPhone(e.target.value)}
+              required
+            />
+          </div>
+        </div>
+
+        <div>
+          <Label>Address <span className="text-gray-500 text-sm">(optional)</span></Label>
           <Input
-            id="to"
-            type="email"
-            placeholder="recipient@example.com"
-            value={to}
-            onChange={(e) => setTo(e.target.value)}
-            required
+            placeholder="123 Main St, City, Country"
+            value={address}
+            onChange={(e) => setAddress(e.target.value)}
           />
         </div>
 
         <div>
-          <Label htmlFor="subject">Subject</Label>
-          <Input
-            id="subject"
-            type="text"
-            placeholder="Subject"
-            value={subject}
-            onChange={(e) => setSubject(e.target.value)}
-            required
-          />
-        </div>
-
-        <div>
-          <Label htmlFor="text">Message</Label>
+          <Label>Message</Label>
           <Textarea
-            id="text"
             placeholder="Write your message here..."
-            value={text}
-            onChange={(e) => setText(e.target.value)}
+            value={message}
+            onChange={(e) => setMessage(e.target.value)}
             required
           />
         </div>
 
         <div>
-          <Label htmlFor="file">Image (optional)</Label>
+          <Label>Attachments</Label>
           <Input
-            id="file"
             type="file"
-            accept="image/*"
-            onChange={(e) => setFile(e.target.files?.[0] || null)}
+            multiple
+            accept="image/*,application/pdf"
+            onChange={(e) => setFiles(e.target.files)}
           />
         </div>
 
