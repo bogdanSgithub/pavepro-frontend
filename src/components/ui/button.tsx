@@ -24,12 +24,13 @@ const buttonVariants = cva(
           transform 
           transition-all 
           duration-150
+          ease-out active:scale-95 active:brightness-90
         `,secondary:
           "bg-secondary text-secondary-foreground shadow-xs hover:bg-secondary/80",
         ghost:
-          "hover:scale-120",
-        link: "text-primary underline-offset-4 hover:underline",
-        important: "bg-primary text-primary-foreground shadow-xs transform transition-all duration-200 hover:bg-teal-600 hover:scale-112",
+          "hover:scale-120 ease-out active:scale-95 active:brightness-90",
+        link: "text-primary underline-offset-4 hover:underline active:underline",
+        important: "bg-primary text-primary-foreground shadow-xs transform transition-all duration-200 hover:bg-teal-600 hover:scale-107 2xl:hover:scale-112 ease-out active:scale-95 active:brightness-90",
       },
       size: {
         default: "h-9 px-4 py-2 has-[>svg]:px-3",

@@ -28,17 +28,20 @@ export default function Navbar() {
 
         {/* Desktop CTA + Lang */}
         <div className="hidden lg:flex items-center space-x-2">
-          <Button variant="ghost" className="text-lg px-6 py-6 flex items-center gap-2">
+          <Button
+            variant="ghost"
+            className="border-1 border-gray-500 xl:border-hidden mx-3 text-lg px-4 py-5 flex justify-center items-center gap-2"
+          >
             <Phone className="w-5 h-5" />
-            <a href="tel:+15149717709">
+            <a href="tel:+15149717709" className="hidden xl:inline">
               (514) 971-7709
             </a>
           </Button>
           <Link className='w-full' to="/contact-us">
-            <Button variant="important" className="px-14 py-6 text-xl">{t("estimate")}</Button>
+            <Button variant="important" className="px-10 py-6 2xl:px-14 text-xl">{t("estimate")}</Button>
           </Link>
 
-          <Button variant="ghost" className="text-lg ml-3 mr-5 p-0" onClick={() => i18n.changeLanguage(handleChangeLanguage())}>
+          <Button variant="ghost" className="text-lg ml-1 mr-3 2xl:ml-3 2xl:mr-5 p-0" onClick={() => i18n.changeLanguage(handleChangeLanguage())}>
             {handleChangeLanguage().toUpperCase()}
           </Button>
         </div>
@@ -68,9 +71,12 @@ export default function Navbar() {
       >
         {/* Close Icon */}
         <div className="flex justify-end p-4">
-          <Button variant="ghost" size="icon" onClick={() => setIsOpen(false)}>
-            <X className="w-6 h-6" />
-          </Button>
+        <button
+          onClick={() => setIsOpen(false)}
+          className="lg:hidden absolute top-2 md:top-3 right-2 w-12 h-12 flex items-center justify-center cursor-pointer group"
+        >
+          <X className="h-5 w-5  md:h-8 md:w-8 transition-transform duration-200 group-hover:scale-125" />
+        </button>
         </div>
 
         {/* Nav Links */}

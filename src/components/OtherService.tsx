@@ -1,6 +1,8 @@
 import { useTranslation, Trans } from 'react-i18next';
 import backgroundImage from "../assets/other_service.jpg";
 import secondaryImage from "@/assets/vertical.jpg";
+import { Link } from 'react-router-dom';
+import { Button } from './ui/button';
 
 export default function OtherService() {
   const { t } = useTranslation();
@@ -26,25 +28,23 @@ export default function OtherService() {
             className="w-full max-w-xl h-auto rounded-xl shadow-lg"
           />
         </figure>
-
-        {/* Image B (second image, stacked on mobile) */}
-        <figure className="w-full px-2 md:hidden">
-          <img
-            src={secondaryImage}
-            alt={t('profileImageAlt')}
-            className="w-full max-w-xs h-auto rounded-xl shadow-lg object-cover"
-          />
-        </figure>
       </div>
 
       {/* Right column: Image B (only on md+) */}
-      <figure className="hidden md:flex w-1/3 justify-start items-start">
-        <img
-          src={secondaryImage}
-          alt={t('profileImageAlt')}
-          className="w-full max-w-xs h-auto rounded-xl shadow-lg object-cover"
-        />
-      </figure>
+      <div className="px-2 md:px-4 w-full h-full md:w-1/2 grid place-items-center text-center mx-auto">
+        <figure className="w-full aspect-[3/4] md:w-auto md:aspect-[3/5] h-auto overflow-hidden rounded-xl shadow-lg ">
+          <img
+            src={secondaryImage}
+            alt={t('profileImageAlt')}
+            className="w-full h-full object-cover"
+          />
+        </figure>
+        <Link to="/contact-us" className="w-full md:w-auto mt-8">
+          <Button className="hover:scale-107 md:hover:scale-112 w-full md:w-auto text-lg md:text-xl px-14 py-6" variant="important">
+            {t('estimate')}
+          </Button>
+        </Link>
+      </div>
     </section>
   );
 }
