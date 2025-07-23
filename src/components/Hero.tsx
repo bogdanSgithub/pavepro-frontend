@@ -16,11 +16,15 @@ export default function Hero() {
       <div className="relative z-10 h-full flex items-center justify-center">
 
         <div className="flex flex-col items-center justify-center text-center px-4">
-          <h2 className="text-left text-4xl md:text-5xl font-bold text-white mb-12">
-            <Trans i18nKey="quote" />
-          </h2>
+        <h2 className="text-left text-4xl md:text-5xl font-bold mb-12 text-white">
+          <Trans i18nKey="quote" components={[
+            <span className="text-white" />,
+            <span className="text-white" />,
+            <span className="text-white" />
+          ]} />
+        </h2>
           <div className="flex flex-col sm:flex-row justify-center items-center gap-10">
-            <Link to="/estimation">
+            <Link to="/contact-us">
               <Button className="text-lg md:text-xl px-14 py-6" variant="outline">
                 {t('estimate')}
               </Button>

@@ -25,7 +25,7 @@ export default function Footer() {
                 <Trans i18nKey="quote" />
               </h2>
               <div className="flex flex-col sm:flex-row justify-center items-center gap-10">
-              <Link to="/estimation">
+              <Link to="/contact-us">
                 <Button className="text-lg md:text-xl px-14 py-6" variant="outline">
                   {t('estimate')}
                 </Button>

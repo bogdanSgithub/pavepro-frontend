@@ -34,7 +34,7 @@ export default function Navbar() {
               (514) 971-7709
             </a>
           </Button>
-          <Link className='w-full' to="/estimation">
+          <Link className='w-full' to="/contact-us">
             <Button variant="important" className="px-14 py-6 text-xl">{t("estimate")}</Button>
           </Link>
 
@@ -116,7 +116,7 @@ export default function Navbar() {
           (514) 971-7709
           </a>
         </Button>
-        <Link className='w-full' to="/estimation">
+        <Link className='w-full' to="/contact-us">
           <Button variant="important" className="w-full text-lg py-4">
             {t("estimate")}
           </Button>

@@ -40,7 +40,7 @@ export default function Profile() {
       </div>
     </div>
     <div className="flex justify-center mt-8">
-      <Link className='w-full' to="/estimation">
+      <Link className='w-full' to="/contact-us">
         <Button variant="important" className="hover:scale-110 w-full px-14 py-6 text-xl">{t("estimate")}</Button>
       </Link>
     </div>

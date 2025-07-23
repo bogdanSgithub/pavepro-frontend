@@ -5,7 +5,7 @@ export default function OtherService() {
   const { t } = useTranslation();
 
   return (
-    <section className="flex flex-col md:flex-row items-start gap-8 px-4 sm:px-6 py-24 overflow-x-hidden max-w-screen-xl mx-auto">
+    <section className="flex flex-col md:flex-row items-start gap-8 px-4 sm:px-6 py-16 overflow-x-hidden max-w-screen-xl mx-auto">
       {/* Text content first */}
       <article className="w-full px-2 md:px-4">
         <h2 className="text-3xl lg:text-4xl font-bold mb-4 text-center lg:text-left">

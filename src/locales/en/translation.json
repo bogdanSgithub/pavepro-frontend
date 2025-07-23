@@ -14,15 +14,15 @@
   "services": {
     "tab1": {
       "title": "1st Step",
-      "description": "Thorough cleaning followed by sand filling and sealant application to enhance the appearance and durability of your paving stones."
+      "description": "We begin by killing all unwanted weeds and vegetation, removing stains (oil, rust, mildew, etc.), and thoroughly extracting the old, loose sand from between the pavers. This step restores the surface and prepares it for the next stage."
     },
     "tab2": {
       "title": "2nd Step",
-      "description": "Leveling and depth adjustment of paving stones to correct imperfections and restore structural integrity and surface aesthetics."
+      "description": "Next, we refill the joints with high-quality polymeric sand, ensuring a solid, weed-resistant bond. The sand is then watered to activate its binding agents, which help lock the pavers in place and prevent shifting."
     },
     "tab3": {
       "title": "3rd Step",
-      "description": "Cleaning of large concrete surfaces and other exterior areas requiring special attention."
+      "description": "Finally, we apply a premium sealer that not only solidifies the sand but also enhances the appearance of your pavers with a rich, clean finish. The sealer protects against stains, UV damage, and water infiltration, giving your surface a long-lasting, beautiful look."
     }
   },
   "portfolio": {
@@ -50,5 +50,20 @@
   "other_service": {
     "title": "Complementary Levelling Service",
     "description": "We offer a complimentary levelling service when needed. If your pavers are uneven or sunken, we carefully take them apart, level the base, and reinstall the pavers for a smooth, even surface."
+  },
+  "region": {
+    "title": "Cleaning The Greater Montreal Area!",
+      "cities": [
+    "Montreal",
+    "Laval",
+    "Longueuil",
+    "Brossard",
+    "Terrebonne",
+    "Blainville",
+    "Repentigny",
+    "La Prairie",
+    "Boisbriand",
+    "Dorval"
+  ]
   }
 }
