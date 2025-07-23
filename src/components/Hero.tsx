@@ -37,12 +37,21 @@ export default function Hero() {
           </div>
         </div>
       </div>
-    <svg
-    className="absolute bottom-0 left-0 w-full h-[80px] fill-white pointer-events-none"
-    viewBox="0 0 1000 100"
-    preserveAspectRatio="none"
-    >
-    <path d="M1000,40c0,0 -120.077,-38.076 -250,-38c-129.923,0.076 -345.105,78 -500,78c-154.895,0 -250,-30 -250,-30l0,50l1000,0l0,-60Z"></path><path d="M1000,40c0,0 -120.077,-38.076 -250,-38c-129.923,0.076 -345.105,73 -500,73c-154.895,0 -250,-45 -250,-45l0,70l1000,0l0,-60Z" className="opacity-40"></path><path d="M1000,40c0,0 -120.077,-38.076 -250,-38c-129.923,0.076 -345.105,68 -500,68c-154.895,0 -250,-65 -250,-65l0,95l1000,0l0,-60Z" className="opacity-40"></path></svg>
+      <svg
+        className="absolute bottom-0 left-0 w-full h-[60px] sm:h-[80px] md:h-[100px] lg:h-[120px] pointer-events-none"
+        viewBox="0 0 2 1"
+        preserveAspectRatio="none"
+      >
+        <defs>
+          <path id="w" d="m0 1v-.5 q.5.5 1 0 t1 0 1 0 1 0 v.5z" />
+        </defs>
+        <g>
+          <use href="#w" y="0.0" fill="#b0b0b0" />
+          <use href="#w" y="0.1" fill="#dcdcdc" />
+          <use href="#w" y="0.2" fill="#ffffff" />
+        </g>
+      </svg>
+
     </section>
   );
 }
