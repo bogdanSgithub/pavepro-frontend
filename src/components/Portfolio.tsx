@@ -28,7 +28,7 @@ export default function Portfolio() {
 
   return (
     <section id="album" className="px-6 md:px-20 mb-20 md:mb-32">
-      <h2 className="text-3xl text-center font-bold text-black mb-10">
+      <h2 className="text-3xl text-center font-bold mb-6 md:mb-10">
                 <Trans i18nKey="portfolio.title" 
                 components={[
                     <span className="text-primary" />,
@@ -62,7 +62,7 @@ export default function Portfolio() {
       />
 
       {/* Overlay */}
-      <div className="absolute inset-0 bg-black/60 md:bg-black/50 flex flex-col justify-center items-center text-center text-white px-4">
+      <div className="absolute inset-0 bg-black/70 md:bg-black/50 flex flex-col justify-center items-center text-center text-white px-4">
         <h3 className="text-2xl md:text-4xl font-bold mb-5 md:mb-8">{t('portfolio.videoTitle')}</h3>
         <a
           href="https://www.google.com/search?sca_esv=aadfb58771dae880&hl=en&gl=ca&output=search&kgmid=/g/11wr3l0g8k&q=Pav%C3%A9PRO&shndl=30&source=sh/x/loc/act/m1/3&kgs=1db473bb5ff9c47e#lpg=cid:CgIgAQ%3D%3D,ik:CAoSLEFGMVFpcE02aktPN0ctbFFxczF3a1pfcjRtWDIzazNYWVFrYXhORzR3THJo"

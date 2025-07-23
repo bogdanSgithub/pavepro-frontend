@@ -16,7 +16,7 @@ export default function Region() {
       </figure>
 
       <article className="w-full px-2 md:px-4">
-        <h2 className="text-3xl lg:text-4xl font-bold mb-4 text-center lg:text-left">
+        <h2 className="text-3xl lg:text-4xl font-bold mb-6 text-center lg:text-left">
           <Trans i18nKey="region.title" components={[<span className="text-primary" />]} />
         </h2>
 

@@ -9,7 +9,7 @@ export default function Services() {
 
   return (
     <section id='services' className="mx-4 sm:mx-16 lg:mx-24 xl:mx-40 2xl:mx-72 mb-20 md:mb-32">
-      <h2 className="text-3xl lg:text-4xl font-bold mb-6 text-center">
+      <h2 className="text-3xl lg:text-4xl font-bold mb-3 md:mb-6 text-center">
         <Trans i18nKey="servicesTitle" 
         components={[
             <span className="text-primary" />,
@@ -17,7 +17,7 @@ export default function Services() {
       </h2>
 
       <Tabs defaultValue="1st_step" className="w-full flex flex-col">
-        <TabsList className="flex justify-center mb-6 sm:mb-4 bg-transparent p-0 w-full max-w-full">
+        <TabsList className="flex justify-center mb-3 md:mb-6 bg-transparent p-0 w-full max-w-full">
         <TabsTrigger
         value="1st_step"
         className="px-4 py-2 data-[state=active]:text-primary"
