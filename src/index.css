@@ -4,14 +4,14 @@
 @custom-variant dark (&:is(.dark *));
 
 use {
-  animation: move-forever 7s linear infinite;
+  animation: move-forever 8s linear infinite;
 }
 use:nth-child(2) {
-  animation-duration: 8s;
-  animation-delay: -5s;
+  animation-duration: 10s;
+  animation-delay: -6s;
 }
 use:nth-child(1) {
-  animation-duration: 16s;
+  animation-duration: 20s;
 }
 
 @keyframes move-forever {
