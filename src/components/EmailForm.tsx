@@ -64,66 +64,73 @@ export default function EmailForm() {
     <section className="w-full max-w-2xl mx-auto mt-16 px-4">
       <h2 className="text-3xl font-bold mb-6 text-center">Get a Quote Today</h2>
       <form onSubmit={handleSubmit} className="space-y-6">
-        <div>
-          <Label>Name</Label>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-1">
-            <Input
-              placeholder="First Name"
-              value={firstName}
-              onChange={(e) => setFirstName(e.target.value)}
-              required
-            />
-            <Input
-              placeholder="Last Name"
-              value={lastName}
-              onChange={(e) => setLastName(e.target.value)}
-              required
-            />
-          </div>
-        </div>
-
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-          <div>
-            <Label>Email</Label>
-            <Input
-              type="email"
-              placeholder="you@example.com"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              required
-            />
-          </div>
-          <div>
-            <Label>Phone Number</Label>
-            <Input
-              type="tel"
-              placeholder="(555) 555-5555"
-              value={phone}
-              onChange={(e) => setPhone(e.target.value)}
-              required
-            />
-          </div>
-        </div>
-
-        <div>
-          <Label>Address <span className="text-gray-500 text-sm">(optional)</span></Label>
+      <div>
+        <Label>
+          Name <span className="text-red-500">*</span>
+        </Label>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-1">
           <Input
-            placeholder="123 Main St, City, Country"
-            value={address}
-            onChange={(e) => setAddress(e.target.value)}
+            placeholder="First Name"
+            value={firstName}
+            onChange={(e) => setFirstName(e.target.value)}
+            required
           />
-        </div>
-
-        <div>
-          <Label>Message</Label>
-          <Textarea
-            placeholder="Write your message here..."
-            value={message}
-            onChange={(e) => setMessage(e.target.value)}
+          <Input
+            placeholder="Last Name"
+            value={lastName}
+            onChange={(e) => setLastName(e.target.value)}
             required
           />
         </div>
+      </div>
 
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <div>
+          <Label>
+            Email <span className="text-red-500">*</span>
+          </Label>
+          <Input
+            type="email"
+            placeholder="Your Email Address"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            required
+          />
+        </div>
+        <div>
+          <Label>
+            Phone Number <span className="text-red-500">*</span>
+          </Label>
+          <Input
+            type="tel"
+            value={phone}
+            onChange={(e) => setPhone(e.target.value)}
+            required
+          />
+        </div>
+      </div>
+
+      <div>
+        <Label>
+          Address <span className="text-gray-500 text-sm">(optional)</span>
+        </Label>
+        <Input
+          value={address}
+          onChange={(e) => setAddress(e.target.value)}
+        />
+      </div>
+
+      <div>
+        <Label>
+          What area(s) would you like to have pressure washed? <span className="text-red-500">*</span>
+        </Label>
+        <Textarea
+          placeholder="Write your message here..."
+          value={message}
+          onChange={(e) => setMessage(e.target.value)}
+          required
+        />
+      </div>
         <div>
           <Label>Attachments</Label>
           <Input
@@ -134,8 +141,8 @@ export default function EmailForm() {
           />
         </div>
 
-        <Button type="submit" className="w-full" disabled={loading}>
-          {loading ? 'Sending...' : 'Send Email'}
+        <Button variant="important" type="submit" className="w-full px-10 py-6 2xl:px-14 text-xl" disabled={loading}>
+          {loading ? 'Sending...' : 'Submit'}
         </Button>
 
         {success && <p className="text-green-600 text-sm text-center">{success}</p>}
