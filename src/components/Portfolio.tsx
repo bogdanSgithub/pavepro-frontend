@@ -1,4 +1,4 @@
-import { useTranslation } from 'react-i18next';
+import { Trans, useTranslation } from 'react-i18next';
 import { ImgComparisonSlider } from '@img-comparison-slider/react';
 import { useInView } from 'react-intersection-observer';
 import { Button } from '@/components/ui/button';
@@ -28,7 +28,12 @@ export default function Portfolio() {
 
   return (
     <section id="album" className="px-6 md:px-20 py-24">
-      <h2 className="text-3xl font-bold text-primary mb-10">{t('portfolio.title')}</h2>
+      <h2 className="text-3xl text-center font-bold text-black mb-10">
+                <Trans i18nKey="portfolio.title" 
+                components={[
+                    <span className="text-primary" />,
+                ]} />
+      </h2>
 
       {/* Image comparison sliders grid */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 ">
@@ -57,7 +62,7 @@ export default function Portfolio() {
       />
 
       {/* Overlay */}
-      <div className="absolute inset-0 bg-black/70 md:bg-black/50 flex flex-col justify-center items-center text-center text-white px-4">
+      <div className="absolute inset-0 bg-black/60 md:bg-black/50 flex flex-col justify-center items-center text-center text-white px-4">
         <h3 className="text-2xl md:text-4xl font-bold mb-4">{t('portfolio.videoTitle')}</h3>
         <Button variant="outline" className="text-base px-8 py-4">
           {t('portfolio.cta')}

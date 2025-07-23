@@ -48,8 +48,8 @@ export default function Services() {
             <div className="flex flex-col md:flex-row items-center gap-4 md:gap-8">
             {/* Text */}
             <article className="p-2 sm:p-4 lg:p-8 w-full md:w-1/2 prose prose-lg">
-                <h3 className='text-2xl lg:text-3xl font-bold mb-2 md:mb-4'>{t('services.tab1.title')}</h3>
-                <p className='text-gray-600 md:text-lg xl:text-xl'>{t('services.tab1.description')}</p>
+                <h3 className='text-2xl text-center lg:text-3xl font-bold mb-2 md:mb-4'>{t('services.tab1.title2')}</h3>
+                <p className='text-gray-600 md:text-lg xl:text-xl indent-8 text-justify md:text-left'>{t('services.tab1.description')}</p>
             </article>
 
             {/* Image */}
@@ -74,8 +74,8 @@ export default function Services() {
             <div className="flex flex-col md:flex-row items-center gap-4 md:gap-8">
             {/* Text */}
             <article className="p-2 sm:p-4 lg:p-8 w-full md:w-1/2 prose prose-lg">
-                <h3 className='text-2xl lg:text-3xl font-bold mb-2 md:mb-4'>{t('services.tab2.title')}</h3>
-                <p className='text-gray-600 md:text-lg xl:text-xl'>{t('services.tab2.description')}</p>
+                <h3 className='text-2xl text-center lg:text-3xl font-bold mb-2 md:mb-4'>{t('services.tab2.title2')}</h3>
+                <p className='text-gray-600 md:text-lg xl:text-xl indent-8 text-justify md:text-left'>{t('services.tab2.description')}</p>
             </article>
 
             {/* Image */}
@@ -100,8 +100,8 @@ export default function Services() {
             <div className="flex flex-col md:flex-row items-center gap-4 md:gap-8">
             {/* Text */}
             <article className="p-2 sm:p-4 lg:p-8 w-full md:w-1/2 prose prose-l">
-                <h3 className='text-2xl lg:text-3xl font-bold mb-2 md:mb-4'>{t('services.tab3.title')}</h3>
-                <p className='text-gray-600 md:text-lg xl:text-xl'>{t('services.tab3.description')}</p>
+                <h3 className='text-2xl text-center lg:text-3xl font-bold mb-2 md:mb-4'>{t('services.tab3.title2')}</h3>
+                <p className='text-gray-600 md:text-lg xl:text-xl indent-8 text-justify md:text-left'>{t('services.tab3.description')}</p>
             </article>
 
             {/* Image */}

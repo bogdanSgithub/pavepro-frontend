@@ -24,7 +24,7 @@ export default function Testimonials() {
   }, []);
 
   return (
-    <section className="relative py-16 lg:px-20 overflow-hidden align-middle">
+    <section className="relative py-16 lg:px-20 md:my-24 overflow-hidden align-middle">
       {/* Background image */}
     <div
       className="absolute inset-0 bg-center bg-no-repeat bg-cover sm:bg-fixed"

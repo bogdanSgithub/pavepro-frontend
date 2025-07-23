@@ -3,7 +3,7 @@ import image from "../assets/map.png";
 
 export default function Region() {
   const { t } = useTranslation();
-  const cities = t('region.cities', { returnObjects: true });
+  const cities = t('region.cities', { returnObjects: true }) as string[];
 
   return (
     <section className="flex flex-col md:flex-row items-start gap-8 px-4 sm:px-6 py-24 overflow-x-hidden max-w-screen-xl mx-auto">
@@ -21,11 +21,11 @@ export default function Region() {
         </h2>
 
         <ul className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3 text-gray-700 text-center md:text-left">
-          {cities.map((city, index) => (
-            <li key={index}>
-              {city}
-            </li>
-          ))}
+        {cities.map((city: string, index: number) => (
+        <li key={index} className="bg-gray-100 rounded-lg px-4 py-2 shadow-sm">
+            {city}
+        </li>
+        ))}
         </ul>
       </article>
     </section>

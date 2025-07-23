@@ -3,30 +3,33 @@
   "album": "Portfolio",
   "estimate": "Get an Estimate",
   "call": "Call Us",
-  "quote": "Professional,<br />Protected,<br />Pristine",
+  "quote": "Professional<br />Protected<br />Pristine",
   "promotional": "30 Days Free Warranty",
-  "profileTitle": "Your Trusted Partner for Paver Maintenance Services",
+  "profileTitle": "Your Trusted <0>Partner</0> for Paver Maintenance Services",
   "profileText": "We specialize in professional pressure washing for residential, commercial, and industrial properties. From driveways and parking lots to storefronts and large industrial surfaces, we clean, restore, and protect with detailed, attentive care. We provide pressure washing, paver sanding and sealing to keep your property looking its absolute best.",
-  "servicesTitle": "Bring Your Pavers Back to Life",
+  "servicesTitle": "<0>Bring</0> Your Pavers <br /><0>Back</0> to <0>Life</0>",
   "Professional": "Professional",
   "Protected": "Protected",
   "Pristine": "Pristine",
   "services": {
     "tab1": {
       "title": "1st Step",
+      "title2": "Clean",
       "description": "We begin by killing all unwanted weeds and vegetation, removing stains (oil, rust, mildew, etc.), and thoroughly extracting the old, loose sand from between the pavers. This step restores the surface and prepares it for the next stage."
     },
     "tab2": {
       "title": "2nd Step",
+      "title2": "Sand",
       "description": "Next, we refill the joints with high-quality polymeric sand, ensuring a solid, weed-resistant bond. The sand is then watered to activate its binding agents, which help lock the pavers in place and prevent shifting."
     },
     "tab3": {
       "title": "3rd Step",
+      "title2": "Seal",
       "description": "Finally, we apply a premium sealer that not only solidifies the sand but also enhances the appearance of your pavers with a rich, clean finish. The sealer protects against stains, UV damage, and water infiltration, giving your surface a long-lasting, beautiful look."
     }
   },
   "portfolio": {
-    "title": "Our Portfolio",
+    "title": "Our <0>Portfolio</0>",
     "videoTitle": "Want To See More?",
     "cta": "View Gallery"
   },
@@ -58,12 +61,10 @@
     "Laval",
     "Longueuil",
     "Brossard",
-    "Terrebonne",
-    "Blainville",
-    "Repentigny",
-    "La Prairie",
-    "Boisbriand",
-    "Dorval"
+    "West Island",
+    "Châteauguay",
+    "Vaudreuil-Dorion",
+    "Île-Perrot"
   ]
   }
 }

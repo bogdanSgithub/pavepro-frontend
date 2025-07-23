@@ -21,7 +21,7 @@ export default function Profile() {
     <h2 className="text-3xl lg:text-4xl font-bold mb-4 text-center lg:text-left">
       <Trans i18nKey="profileTitle" components={[<span className="text-primary" />]} />
     </h2>
-    <p className="text-gray-600  md:text-lg xl:text-xl leading-relaxed mb-8 text-center lg:text-left">
+    <p className="text-gray-600  md:text-lg xl:text-xl leading-relaxed mb-8 text-justify lg:text-left">
       {t('profileText')}
     </p>
 
