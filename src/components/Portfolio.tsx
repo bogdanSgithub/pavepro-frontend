@@ -1,4 +1,4 @@
-import { Trans } from 'react-i18next';
+import { useTranslation } from 'react-i18next';
 import { ImgComparisonSlider } from '@img-comparison-slider/react';
 import { useInView } from 'react-intersection-observer';
 import before1 from '@/assets/before_1.jpg';
@@ -14,6 +14,7 @@ import { useEffect } from 'react';
 
 export default function Portfolio() {
   const { ref: videoRef, inView } = useInView({ triggerOnce: true, threshold: 0.3 });
+  const { t } = useTranslation();
   useEffect(() => {
     console.log(inView);
   }, [inView])
@@ -27,13 +28,7 @@ export default function Portfolio() {
   return (
     <section id="album" className="px-6 md:px-20 mb-20 md:mb-32">
       <h2 className="text-3xl text-center font-bold mb-6 md:mb-10">
-        <Trans i18nKey="portfolioTitle" components={[
-          <span className="text-primary" />,
-          <span className="text-white" />,
-          <span className="text-white" />
-        ]} />
-        <Trans
-        />
+        {t('portfolioTitle')}
       </h2>
 
       {/* Image comparison sliders grid */}
