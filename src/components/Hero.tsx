@@ -2,9 +2,20 @@ import { Link } from 'react-router-dom';
 import heroImage from '../assets/hero.webp';
 import { Button } from './ui/button';
 import { useTranslation, Trans } from 'react-i18next';
+import { useEffect } from 'react';
 
 export default function Hero() {
     const { t } = useTranslation();
+
+    useEffect(() => {
+      const link = document.createElement("link");
+      link.rel = "preload";
+      link.as = "image";
+      link.href = heroImage;
+      link.type = "image/webp";
+      document.head.appendChild(link);
+    }, []);
+
 
   return (
     <section
