@@ -48,6 +48,16 @@ export default function Footer() {
               <p>{t('footer.workingHours.hours')}</p>
             </div>
             <div>
+              <h3 className="text-xl font-semibold mb-2">{t('footer.contact.title')}</h3>
+              <p className="flex flex-col gap-1">
+                <div className='flex items-center gap-2'>
+                <Phone className="w-5 h-5" />
+                <a href="tel:+15149717709">(514) 971-7709</a>
+                </div>
+                pavepro.services@gmail.com
+              </p>
+            </div>
+            <div>
               <h3 className="text-xl font-semibold mb-2">{t('footer.location.title')}</h3>
               <p className="flex items-center gap-2">
               <a
@@ -57,13 +67,6 @@ export default function Footer() {
                 <MapPin className="w-5 h-5" />
                 {t('footer.location.area')}
               </a>
-              </p>
-            </div>
-            <div>
-              <h3 className="text-xl font-semibold mb-2">{t('footer.contact.title')}</h3>
-              <p className="flex items-center gap-2">
-                <Phone className="w-5 h-5" />
-                <a href="tel:+15149717709">(514) 971-7709</a>
               </p>
             </div>
           </div>

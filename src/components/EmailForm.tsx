@@ -36,7 +36,7 @@ export default function EmailForm() {
     }
 
     try {
-      const res = await fetch('http://localhost:3000/email', {
+      const res = await fetch('https://pavepro-backend.onrender.com/email', {
         method: 'POST',
         body: formData,
       });
