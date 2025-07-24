@@ -10,6 +10,7 @@ import after3 from '@/assets/after_3.jpg';
 import before4 from '@/assets/before_4.jpg';
 import after4 from '@/assets/after_4.jpg';
 import video from '@/assets/test_portfolio.mp4';
+import fallback from '@/assets/2nd_step.jpg';
 import { useEffect } from 'react';
 
 export default function Portfolio() {
@@ -55,6 +56,7 @@ export default function Portfolio() {
         loop
         playsInline
         autoPlay
+        poster={fallback}
       />
     </div>
 

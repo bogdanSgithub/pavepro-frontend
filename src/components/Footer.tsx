@@ -11,7 +11,7 @@ export default function Footer() {
     <footer className="w-full">
       
       {/* Entire footer takes full height on mobile, 80vh on desktop */}
-      <div className="flex flex-col h-[100vh] lg:h-[93vh]">
+      <div className="flex flex-col [@media(min-width:376px)]:h-[100vh] lg:h-[93vh]">
         {/* Background image section */}
         <div className="relative flex-grow overflow-hidden">
           <div
@@ -21,7 +21,7 @@ export default function Footer() {
           <div className="absolute inset-0 bg-gradient-to-b from-primary/30 sm:from-primary/50 to-primary" />
           <div className="relative z-10 flex items-center justify-center h-full text-center px-4">
             <div className="flex flex-col items-center justify-center max-w-4xl">
-              <h2 className="text-left text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-10">
+              <h2 className="[@media(max-width:376px)]:mt-5 text-left text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-10">
                 <Trans i18nKey="quote" />
               </h2>
               <div className="flex flex-col sm:flex-row justify-center items-center gap-5 md:gap-10">

@@ -8,7 +8,7 @@ export default function OtherService() {
   const { t } = useTranslation();
 
   return (
-      <section className="flex flex-col md:flex-row gap-8 px-4 sm:px-6 mb-20 md:mb-32 overflow-x-hidden max-w-screen-xl mx-auto">
+      <section className="flex flex-col md:flex-row gap-8 px-4 sm:px-6 mb-20 md:mb-32 max-w-screen-xl mx-auto">
       {/* Left column: text + first image */}
       <div className="w-full md:w-2/3 flex flex-col md:gap-6">
         <article className="w-full px-2 md:px-4">
@@ -31,7 +31,7 @@ export default function OtherService() {
       </div>
 
       {/* Right column: Image B (only on md+) */}
-      <div className="px-2 md:px-4 w-full h-full md:w-1/2 grid place-items-center text-center mx-auto">
+      <div className="px-2 md:px-4 w-full md:w-1/2 grid place-items-center text-center mx-auto">
         <figure className="w-full aspect-[3/4] md:w-auto md:aspect-[3/5] h-auto overflow-hidden rounded-xl">
           <img
             src={secondaryImage}

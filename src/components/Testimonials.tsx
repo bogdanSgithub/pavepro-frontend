@@ -98,7 +98,7 @@ export default function Testimonials() {
                   {reviews.map((review, index) => (
                     <SwiperSlide key={index}>
                       <li className="h-full">
-                        <article className="h-full bg-white border rounded-xl py-6 px-8 shadow-sm flex flex-col justify-between">
+                        <article className="h-full bg-white border rounded-xl py-6 px-4 sm:px-8 shadow-sm flex flex-col justify-between">
                           <div className="flex justify-between items-start mb-3">
                             <div>
                               <p className="font-bold text-2xl text-gray-800">{review.name}</p>
@@ -107,7 +107,7 @@ export default function Testimonials() {
                             <img
                               src={googleLogo}
                               alt="Google Logo"
-                              className="w-10 h-10 object-contain"
+                              className="w-8 sm:w-10 h-8 sm:h-10 object-contain"
                             />
                           </div>
                           <p className="text-lg">{review.content}</p>

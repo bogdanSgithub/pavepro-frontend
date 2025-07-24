@@ -67,7 +67,7 @@ export default function EmailForm() {
     <section className="w-full max-w-2xl mx-auto my-16 px-6">
       <h2 className="text-3xl font-bold mb-6 text-center">{t('emailForm.title')}</h2>
       <form onSubmit={handleSubmit} className="space-y-6">
-      <div>
+      <div className='mb-5'>
         <Label>
           {t('emailForm.name')} <span className="text-red-500">*</span>
         </Label>
@@ -87,7 +87,7 @@ export default function EmailForm() {
         </div>
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+      <div className="mb-5 grid grid-cols-1 sm:grid-cols-2 gap-4">
         <div>
           <Label>
             {t('emailForm.email')} <span className="text-red-500">*</span>
@@ -123,7 +123,7 @@ export default function EmailForm() {
         />
       </div>
 
-      <div>
+      <div className="mb-5">
         <h3 className='text-2xl mt-10 mb-5 font-semibold'>{t('emailForm.subTitle')}</h3>
         <Label>
           {t('emailForm.message')} <span className="text-red-500">*</span>
@@ -135,7 +135,7 @@ export default function EmailForm() {
           required
         />
       </div>
-        <div>
+        <div className="mb-5">
           <Label>{t('emailForm.attachments')}</Label>
           <p className='mb-3 text-gray-600'>{t('emailForm.attachmentsSubtitle')}</p>
           <Input

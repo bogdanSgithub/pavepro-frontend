@@ -20,27 +20,27 @@ export default function Hero() {
   return (
     <section
       id='home'
-      className="relative h-[70vh] md:h-[85vh] bg-cover bg-center"
+      className="relative h-[65vh] md:h-[85vh] bg-cover bg-center"
       style={{ backgroundImage: `url(${heroImage})` }}
     >
       <div className="relative z-10 h-full flex items-center justify-center">
 
         <div className="flex flex-col items-center justify-center text-center px-4">
-        <h2 className="text-left text-4xl md:text-5xl font-bold mb-12 text-white">
+        <h2 className="text-left  text-4xl md:text-5xl font-bold [@media(max-width:376px)]:text-3xl [@media(max-width:376px)]:mb-5 mb-12 text-white">
           <Trans i18nKey="quote" components={[
             <span className="text-white" />,
             <span className="text-white" />,
             <span className="text-white" />
           ]} />
         </h2>
-          <div className="flex flex-col sm:flex-row justify-center items-center gap-10">
+          <div className="flex flex-col sm:flex-row justify-center items-center gap-10 [@media(max-width:376px)]:gap-4">
             <Link to="/contact-us">
-              <Button className="text-lg md:text-xl px-14 py-6" variant="outline">
+              <Button className="text-lg md:text-xl px-14 py-6 [@media(max-width:376px)]:py-5 [@media(max-width:376px)]:px-10" variant="outline">
                 {t('estimate')}
               </Button>
             </Link>
             <a href="tel:+15149717709">
-            <Button className="text-xl px-14 py-6" variant="outline">
+            <Button className="text-xl px-14 py-6 [@media(max-width:376px)]:py-5 [@media(max-width:376px)]:px-10" variant="outline">
               {t('call')}
             </Button>
             </a>
