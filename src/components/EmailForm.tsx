@@ -39,7 +39,7 @@ export default function EmailForm() {
     }
 
     try {
-      const res = await fetch('https://pavepro-backend.onrender.com/email', {
+      const res = await fetch('https://pavepro-backend-aged-log-3919.fly.dev/email', {
         method: 'POST',
         body: formData,
       });
@@ -78,6 +78,7 @@ export default function EmailForm() {
             onChange={(e) => setFirstName(e.target.value)}
             required
           />
+          <input type="text" name="middleName" autoComplete="off" hidden />
           <Input
             placeholder={t('emailForm.lastName')}
             value={lastName}
@@ -145,6 +146,7 @@ export default function EmailForm() {
             onChange={(e) => setFiles(e.target.files)}
           />
         </div>
+        
 
         <Button variant="important" type="submit" className="w-full px-10 py-6 2xl:px-14 text-xl" disabled={loading}>
           {loading ? t('emailForm.sending') : t('emailForm.submit')}
