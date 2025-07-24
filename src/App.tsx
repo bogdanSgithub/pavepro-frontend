@@ -4,7 +4,7 @@ import ContactUs from '@/pages/ContactUs';
 
 export default function App() {
   return (
-    <Router basename="/pavepro-frontend">
+    <Router>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/contact-us" element={<ContactUs />} />

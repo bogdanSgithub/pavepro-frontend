@@ -5,7 +5,7 @@ import { defineConfig } from "vite"
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: "/pavepro-frontend/",
+  base: "/",
   plugins: [react(), tailwindcss()],
   resolve: {
     alias: {
