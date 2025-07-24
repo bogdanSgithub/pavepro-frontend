@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import heroImage from '../assets/hero.avif';
+import heroImage from '../assets/hero.webp';
 import { Button } from './ui/button';
 import { useTranslation, Trans } from 'react-i18next';
 
@@ -12,7 +12,6 @@ export default function Hero() {
       className="relative h-[70vh] md:h-[85vh] bg-cover bg-center"
       style={{ backgroundImage: `url(${heroImage})` }}
     >
-      <div className="absolute inset-0 bg-black/45 z-0" />
       <div className="relative z-10 h-full flex items-center justify-center">
 
         <div className="flex flex-col items-center justify-center text-center px-4">
