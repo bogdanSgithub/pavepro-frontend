@@ -7,9 +7,10 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
+    "postbuild": "echo www.paveproservices.ca > dist/CNAME",
     "lint": "eslint .",
     "preview": "vite preview",
-    "predeploy": "npm run build",
+    "predeploy": "npm run build && npm run postbuild",
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {

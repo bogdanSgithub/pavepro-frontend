@@ -24,7 +24,7 @@ export default function Footer() {
               <h2 className="text-left text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-10">
                 <Trans i18nKey="quote" />
               </h2>
-              <div className="flex flex-col sm:flex-row justify-center items-center gap-10">
+              <div className="flex flex-col sm:flex-row justify-center items-center gap-5 md:gap-10">
               <Link to="/contact-us">
                 <Button className="text-lg md:text-xl px-14 py-6" variant="outline">
                   {t('estimate')}
@@ -42,7 +42,7 @@ export default function Footer() {
 
         {/* Solid contact section */}
         <div className="bg-primary text-white px-6 py-5 lg:px-20">
-          <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10">
+          <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:py-5 md:grid-cols-3 gap-7 md:gap-10">
             <div>
               <h3 className="text-xl font-semibold mb-2">{t('footer.workingHours.title')}</h3>
               <p>{t('footer.workingHours.hours')}</p>
@@ -74,7 +74,7 @@ export default function Footer() {
               </p>
             </div>
           </div>
-          <div className="mt-8 text-sm text-center text-white/80">
+          <div className="mt-5 md:mt-8 text-sm text-center text-white/80">
             © {new Date().getFullYear()} PavéPRO. {t('footer.rights')}
           </div>
         </div>

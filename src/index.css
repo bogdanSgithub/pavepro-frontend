@@ -3,6 +3,11 @@
 
 @custom-variant dark (&:is(.dark *));
 
+::selection {
+  background-color: #3431C9; /* Highlight background */
+  color: #fff;               /* Highlighted text color */
+}
+
 use {
   animation: move-forever 8s linear infinite;
 }

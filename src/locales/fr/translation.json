@@ -5,12 +5,12 @@
   "call": "Appelez-nous",
   "quote": "Professionnel<br />Protégé<br />Propre",
   "promotional": "Garantie gratuite de 30 jours",
-  "profileTitle": "Votre <0>Partenaire</0> de Confiance pour l’Entretien de Pavés",
+  "profileTitle": "Votre <0>partenaire</0> de confiance pour l’entretien de pavés",
   "profileText": "Nous sommes spécialisés dans le nettoyage haute pression professionnel pour les propriétés résidentielles, commerciales et industrielles. Des allées et stationnements aux devantures de magasins et grandes surfaces industrielles, nous nettoyons, restaurons et protégeons avec soin et précision. Nous offrons des services de lavage à pression, de sablage et de scellement des pavés pour que votre propriété soit toujours à son meilleur.",
   "Professional": "Professionnel",
   "Protected": "Protégé",
   "Pristine": "Propre",  
-  "servicesTitle": "<0>Redonnez</0> Vie à Vos <0>Pavés</0>",
+  "servicesTitle": "<0>Redonnez</0> vie à vos <0>pavés</0>",
   "services": {
     "tab1": {
       "title": "1ʳᵉ Étape",
@@ -28,11 +28,7 @@
       "description": "Pour finir, nous appliquons un scellant haut de gamme qui solidifie le sable et rehausse l’apparence des pavés avec une finition nette et élégante. Ce traitement protège la surface contre les taches, les rayons UV et l’infiltration d’eau, assurant une durabilité et une beauté à long terme."
     }
   },
-  "portfolio": {
-    "title": "Notre <0>Portfolio</0>",
-    "videoTitle": "Voulez en Voir Plus ?",
-    "cta": "Voir la Galerie"
-  },
+  "portfolioTitle": "Notre <0>Portfolio</0>",
   "testimonials": {
     "title": "Ce que disent nos clients",
     "reviews": [
@@ -51,7 +47,7 @@
     ]
   },
   "other_service": {
-    "title": "Service de Nivellement Complémentaire",
+    "title": "Service de nivellement complémentaire",
     "description": "Nous proposons un service de nivellement complémentaire lorsque cela est nécessaire. Si certains pavés sont irréguliers ou affaissés, nous les retirons avec soin, remettons la base à niveau, puis les réinstallons pour assurer une surface lisse et uniforme."
   },
     "region": {

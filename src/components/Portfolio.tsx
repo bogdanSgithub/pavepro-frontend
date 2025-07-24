@@ -27,10 +27,13 @@ export default function Portfolio() {
   return (
     <section id="album" className="px-6 md:px-20 mb-20 md:mb-32">
       <h2 className="text-3xl text-center font-bold mb-6 md:mb-10">
-        <Trans i18nKey="portfolio.title" 
-        components={[
-            <span className="text-primary" />,
+        <Trans i18nKey="portfolioTitle" components={[
+          <span className="text-primary" />,
+          <span className="text-white" />,
+          <span className="text-white" />
         ]} />
+        <Trans
+        />
       </h2>
 
       {/* Image comparison sliders grid */}
