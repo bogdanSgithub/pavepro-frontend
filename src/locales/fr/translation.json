@@ -1,6 +1,6 @@
 { 
   "home": "Accueil",
-  "album": "Portefeuille",
+  "album": "Portfolio",
   "estimate": "Soumission Gratuite",
   "call": "Appelez-nous",
   "quote": "Professionnel<br />Protégé<br />Propre",
@@ -29,7 +29,7 @@
     }
   },
   "portfolio": {
-    "title": "Notre <0>Portefeuille</0>",
+    "title": "Notre <0>Portfolio</0>",
     "videoTitle": "Voulez en Voir Plus ?",
     "cta": "Voir la Galerie"
   },
