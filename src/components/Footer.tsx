@@ -54,7 +54,11 @@ export default function Footer() {
                 <Phone className="w-5 h-5" />
                 <a href="tel:+15149717709">(514) 971-7709</a>
                 </div>
+                <a
+                  href="mailto:pavepro.services@gmail.com?subject=Request for Quote"
+                >
                 pavepro.services@gmail.com
+                </a>
               </p>
             </div>
             <div>

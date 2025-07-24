@@ -3,6 +3,7 @@ import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { Button } from '@/components/ui/button';
 import { Label } from '@/components/ui/label';
+import { useTranslation } from 'react-i18next';
 
 export default function EmailForm() {
   const [firstName, setFirstName] = useState('');
@@ -15,6 +16,8 @@ export default function EmailForm() {
   const [loading, setLoading] = useState(false);
   const [success, setSuccess] = useState<string | null>(null);
   const [error, setError] = useState<string | null>(null);
+
+  const { t } = useTranslation();
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -61,22 +64,22 @@ export default function EmailForm() {
   };
 
   return (
-    <section className="w-full max-w-2xl mx-auto mt-16 px-4">
-      <h2 className="text-3xl font-bold mb-6 text-center">Get a Quote Today</h2>
+    <section className="w-full max-w-2xl mx-auto my-16 px-6">
+      <h2 className="text-3xl font-bold mb-6 text-center">{t('emailForm.title')}</h2>
       <form onSubmit={handleSubmit} className="space-y-6">
       <div>
         <Label>
-          Name <span className="text-red-500">*</span>
+          {t('emailForm.name')} <span className="text-red-500">*</span>
         </Label>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-1">
           <Input
-            placeholder="First Name"
+            placeholder={t('emailForm.firstName')}
             value={firstName}
             onChange={(e) => setFirstName(e.target.value)}
             required
           />
           <Input
-            placeholder="Last Name"
+            placeholder={t('emailForm.lastName')}
             value={lastName}
             onChange={(e) => setLastName(e.target.value)}
             required
@@ -87,11 +90,11 @@ export default function EmailForm() {
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
         <div>
           <Label>
-            Email <span className="text-red-500">*</span>
+            {t('emailForm.email')} <span className="text-red-500">*</span>
           </Label>
           <Input
             type="email"
-            placeholder="Your Email Address"
+            placeholder={t('emailForm.emailPlaceholder')}
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             required
@@ -99,7 +102,7 @@ export default function EmailForm() {
         </div>
         <div>
           <Label>
-            Phone Number <span className="text-red-500">*</span>
+            {t('emailForm.phone')} <span className="text-red-500">*</span>
           </Label>
           <Input
             type="tel"
@@ -112,7 +115,7 @@ export default function EmailForm() {
 
       <div>
         <Label>
-          Address <span className="text-gray-500 text-sm">(optional)</span>
+          {t('emailForm.address')} <span className="text-gray-500 text-sm">({t('emailForm.optional')})</span>
         </Label>
         <Input
           value={address}
@@ -121,18 +124,20 @@ export default function EmailForm() {
       </div>
 
       <div>
+        <h3 className='text-2xl mt-10 mb-5 font-semibold'>{t('emailForm.subTitle')}</h3>
         <Label>
-          What area(s) would you like to have pressure washed? <span className="text-red-500">*</span>
+          {t('emailForm.message')} <span className="text-red-500">*</span>
         </Label>
         <Textarea
-          placeholder="Write your message here..."
+          placeholder={t('emailForm.messagePlaceholder')}
           value={message}
           onChange={(e) => setMessage(e.target.value)}
           required
         />
       </div>
         <div>
-          <Label>Attachments</Label>
+          <Label>{t('emailForm.attachments')}</Label>
+          <p className='mb-3 text-gray-600'>{t('emailForm.attachmentsSubtitle')}</p>
           <Input
             type="file"
             multiple
@@ -142,11 +147,11 @@ export default function EmailForm() {
         </div>
 
         <Button variant="important" type="submit" className="w-full px-10 py-6 2xl:px-14 text-xl" disabled={loading}>
-          {loading ? 'Sending...' : 'Submit'}
+          {loading ? t('emailForm.sending') : t('emailForm.submit')}
         </Button>
 
-        {success && <p className="text-green-600 text-sm text-center">{success}</p>}
-        {error && <p className="text-red-600 text-sm text-center">{error}</p>}
+        {success && <p className="text-green-600 text-center">{success}</p>}
+        {error && <p className="text-red-600 text-center">{error}</p>}
       </form>
     </section>
   );

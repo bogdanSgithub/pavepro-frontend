@@ -67,6 +67,25 @@
       "Île-Perrot"
     ]
   },
+    "emailForm": {
+    "title": "Get a Quote Today",
+    "name": "Name",
+    "firstName": "First Name",
+    "lastName": "Last Name",
+    "email": "Email",
+    "emailPlaceholder": "Your Email Address",
+    "phone": "Phone Number",
+    "address": "Address",
+    "optional": "optional",
+    "subTitle": "Please provide some details",
+    "message": "How can we help?",
+    "messagePlaceholder": "Enter a description of the work you would like done",
+    "attachments": "Attachments",
+    "submit": "Submit",
+    "sending": "Sending...",
+    "emailInstead": "Email (pavepro.services@gmail.com)",
+    "attachmentsSubtitle": "Please attach photos or documents that will help describe your job."
+  },
     "footer": {
     "workingHours": {
       "title": "Working Hours",

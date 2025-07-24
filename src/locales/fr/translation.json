@@ -66,6 +66,25 @@
     "Vaudreuil-Dorion",
     "Île-Perrot"
     ]
+  },  
+  "emailForm": {
+    "title": "Obtenez une soumission aujourd'hui",
+    "name": "Nom",
+    "firstName": "Prénom",
+    "lastName": "Nom de famille",
+    "email": "Courriel",
+    "emailPlaceholder": "Votre adresse courriel",
+    "phone": "Numéro de téléphone",
+    "address": "Adresse",
+    "optional": "optionnel",
+    "subTitle": "Veuillez fournir quelques détails",
+    "message": "Comment pouvons-nous vous aider?",
+    "messagePlaceholder": "Décrivez les travaux que vous souhaitez faire effectuer",
+    "attachments": "Pièces jointes",
+    "submit": "Soumettre",
+    "sending": "Envoi en cours...",
+    "emailInstead": "Courriel (pavepro.services@gmail.com)",
+    "attachmentsSubtitle": "Veuillez joindre des photos ou des documents utiles à la description de votre projet."
   },
     "footer": {
     "workingHours": {
