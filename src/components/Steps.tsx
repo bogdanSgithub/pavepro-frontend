@@ -1,7 +1,7 @@
 import { useTranslation, Trans } from 'react-i18next';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
-import step_2 from '@/assets/2nd_step.jpg';
 import step_1 from '@/assets/1st_step.jpg';
+import step_2 from '@/assets/2nd_step.jpg';
 import step_3 from '@/assets/3rd_step.jpg';
 
 export default function Services() {

@@ -41,7 +41,7 @@ export default function Footer() {
         </div>
 
         {/* Solid contact section */}
-        <div className="bg-primary text-white px-6 py-10 lg:px-20">
+        <div className="bg-primary text-white px-6 py-5 lg:px-20">
           <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10">
             <div>
               <h3 className="text-xl font-semibold mb-2">{t('footer.workingHours.title')}</h3>
