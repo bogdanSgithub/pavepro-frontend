@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import heroImage from '../assets/hero.jpg';
+import heroImage from '../assets/hero.avif';
 import { Button } from './ui/button';
 import { useTranslation, Trans } from 'react-i18next';
 
